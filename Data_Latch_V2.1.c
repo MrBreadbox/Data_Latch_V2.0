@@ -1,11 +1,11 @@
 /*
-* Resolverausleser.c
-* Programm um Position des Resolvers vom DDC Print in S-ram zu latchen bei
-* einer Positionänderung des Encoders. Gemessen wird von Z zu Z Impuls
+* Data_Latch_V2.1.c
+* Programm um 3D Sensordaten in S-ram zu latchen bei
+* einer Positionänderung des Encoders.
 *
-*Messfrequenz: 7uS -140kHz
+*Version 2.1 beeinhaltet zusätzlich eine I2C Schnitstelle auf PC0 & PC1
 *
-* Created: 26.03.2015 16:00
+* Created: 09.10.2017
 *  Author: lweber
 */
 
@@ -230,4 +230,3 @@ int main(void)
 	}
 	return 0;
 }
-
