@@ -66,7 +66,8 @@
 #define AB_ALT 0b00001100
 #define AB_ALT_NEU 0b00001111
 #define PORTD_AB 0b00110000
-#define PORTC_AB 0b00000011				//Optionaler Encoder durch port C AB ersetzen.
+#define PORTC_AB 0b01100000				//Optionaler Encoder durch port C AB ersetzen. (V2.0 = 0b00000011)
+#define SHIFT_AB 5						//5 mal rechts schieben um wieder auf Bit 0&1 zu gelangen.
 #define Z_BIT	0b00100000
 //******************ENCODER*******************************************
 
@@ -74,6 +75,7 @@
 #define CS_FH5401 PB4
 #define RESET_FH5401 PB2  
 #define READY_FH5401 PC4
+#define CLK_FH5401 PC2
 #define TEMP 0x10
 #define HALL_Z 0x12
 #define HALL_X 0x13

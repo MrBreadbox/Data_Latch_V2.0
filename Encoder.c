@@ -34,7 +34,7 @@ uint8_t Encoderdata(uint8_t encodersig)
 	uint8_t temp;
 	uint8_t temp2;
 	
-	temp=(PINC & PORTC_AB);												//AB Signal einlesen und auf bit 0&1 schieben
+	temp=(PINC & PORTC_AB)>>SHIFT_AB;									//AB Signal einlesen und auf bit 0&1 schieben
 	temp2=encodersig & ~(AB_NEU);										//Neus AB Signal in encoder sig einfügen 0b11111100
 	encodersig=temp|temp2;												//Aktuelles AB Signal in encoder sig einfügen
 	temp=Drehrichtung(encodersig);
