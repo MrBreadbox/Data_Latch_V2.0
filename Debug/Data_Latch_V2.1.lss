@@ -1,0 +1,2238 @@
+
+Data_Latch_V2.1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000c42  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000028  00800060  00000c42  00000cd6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          0000000c  00800088  00800088  00000cfe  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000cfe  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000208  00000000  00000000  00000d2e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00001990  00000000  00000000  00000f36  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000bc3  00000000  00000000  000028c6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000c7d  00000000  00000000  00003489  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000004e0  00000000  00000000  00004108  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000048e  00000000  00000000  000045e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000db1  00000000  00000000  00004a76  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000178  00000000  00000000  00005827  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 a0 00 	jmp	0x140	; 0x140 <__ctors_end>
+   4:	0c 94 bf 00 	jmp	0x17e	; 0x17e <__vector_1>
+   8:	0c 94 4b 01 	jmp	0x296	; 0x296 <__vector_2>
+   c:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  10:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  14:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  18:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  1c:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  20:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  24:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  28:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  2c:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  30:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  34:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  38:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  3c:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  40:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  44:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  48:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  4c:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  50:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__bad_interrupt>
+  54:	da 02       	muls	r29, r26
+  56:	d6 02       	muls	r29, r22
+  58:	d6 02       	muls	r29, r22
+  5a:	d6 02       	muls	r29, r22
+  5c:	d6 02       	muls	r29, r22
+  5e:	d6 02       	muls	r29, r22
+  60:	d6 02       	muls	r29, r22
+  62:	d6 02       	muls	r29, r22
+  64:	d6 02       	muls	r29, r22
+  66:	d6 02       	muls	r29, r22
+  68:	d6 02       	muls	r29, r22
+  6a:	d6 02       	muls	r29, r22
+  6c:	d6 02       	muls	r29, r22
+  6e:	d6 02       	muls	r29, r22
+  70:	d6 02       	muls	r29, r22
+  72:	d6 02       	muls	r29, r22
+  74:	d6 02       	muls	r29, r22
+  76:	d6 02       	muls	r29, r22
+  78:	d6 02       	muls	r29, r22
+  7a:	d6 02       	muls	r29, r22
+  7c:	d6 02       	muls	r29, r22
+  7e:	d6 02       	muls	r29, r22
+  80:	d6 02       	muls	r29, r22
+  82:	d6 02       	muls	r29, r22
+  84:	d6 02       	muls	r29, r22
+  86:	d6 02       	muls	r29, r22
+  88:	d6 02       	muls	r29, r22
+  8a:	d6 02       	muls	r29, r22
+  8c:	d6 02       	muls	r29, r22
+  8e:	d6 02       	muls	r29, r22
+  90:	d6 02       	muls	r29, r22
+  92:	d6 02       	muls	r29, r22
+  94:	d6 02       	muls	r29, r22
+  96:	d6 02       	muls	r29, r22
+  98:	d6 02       	muls	r29, r22
+  9a:	d6 02       	muls	r29, r22
+  9c:	d6 02       	muls	r29, r22
+  9e:	d6 02       	muls	r29, r22
+  a0:	d6 02       	muls	r29, r22
+  a2:	d6 02       	muls	r29, r22
+  a4:	d6 02       	muls	r29, r22
+  a6:	d6 02       	muls	r29, r22
+  a8:	d6 02       	muls	r29, r22
+  aa:	d6 02       	muls	r29, r22
+  ac:	d6 02       	muls	r29, r22
+  ae:	d6 02       	muls	r29, r22
+  b0:	d6 02       	muls	r29, r22
+  b2:	d6 02       	muls	r29, r22
+  b4:	d6 02       	muls	r29, r22
+  b6:	a0 02       	muls	r26, r16
+  b8:	a4 02       	muls	r26, r20
+  ba:	a8 02       	muls	r26, r24
+  bc:	ac 02       	muls	r26, r28
+  be:	b0 02       	muls	r27, r16
+  c0:	b4 02       	muls	r27, r20
+  c2:	d6 02       	muls	r29, r22
+  c4:	d6 02       	muls	r29, r22
+  c6:	d6 02       	muls	r29, r22
+  c8:	d6 02       	muls	r29, r22
+  ca:	d6 02       	muls	r29, r22
+  cc:	d6 02       	muls	r29, r22
+  ce:	d6 02       	muls	r29, r22
+  d0:	d6 02       	muls	r29, r22
+  d2:	d6 02       	muls	r29, r22
+  d4:	d6 02       	muls	r29, r22
+  d6:	d6 02       	muls	r29, r22
+  d8:	d6 02       	muls	r29, r22
+  da:	d6 02       	muls	r29, r22
+  dc:	d6 02       	muls	r29, r22
+  de:	c4 02       	muls	r28, r20
+  e0:	d6 02       	muls	r29, r22
+  e2:	d6 02       	muls	r29, r22
+  e4:	d6 02       	muls	r29, r22
+  e6:	d6 02       	muls	r29, r22
+  e8:	d6 02       	muls	r29, r22
+  ea:	d6 02       	muls	r29, r22
+  ec:	d6 02       	muls	r29, r22
+  ee:	d6 02       	muls	r29, r22
+  f0:	d6 02       	muls	r29, r22
+  f2:	d6 02       	muls	r29, r22
+  f4:	d6 02       	muls	r29, r22
+  f6:	b8 02       	muls	r27, r24
+  f8:	ca 02       	muls	r28, r26
+  fa:	d6 02       	muls	r29, r22
+  fc:	d0 02       	muls	r29, r16
+  fe:	d6 02       	muls	r29, r22
+ 100:	d6 02       	muls	r29, r22
+ 102:	be 02       	muls	r27, r30
+ 104:	d6 02       	muls	r29, r22
+ 106:	d6 02       	muls	r29, r22
+ 108:	d6 02       	muls	r29, r22
+ 10a:	d6 02       	muls	r29, r22
+ 10c:	d6 02       	muls	r29, r22
+ 10e:	d6 02       	muls	r29, r22
+ 110:	d6 02       	muls	r29, r22
+ 112:	d6 02       	muls	r29, r22
+ 114:	d6 02       	muls	r29, r22
+ 116:	d6 02       	muls	r29, r22
+ 118:	d6 02       	muls	r29, r22
+ 11a:	7c 02       	muls	r23, r28
+ 11c:	d6 02       	muls	r29, r22
+ 11e:	d6 02       	muls	r29, r22
+ 120:	d6 02       	muls	r29, r22
+ 122:	67 02       	muls	r22, r23
+ 124:	9b 02       	muls	r25, r27
+ 126:	71 02       	muls	r23, r17
+ 128:	d6 02       	muls	r29, r22
+ 12a:	88 02       	muls	r24, r24
+ 12c:	d6 02       	muls	r29, r22
+ 12e:	92 02       	muls	r25, r18
+ 130:	d6 02       	muls	r29, r22
+ 132:	75 02       	muls	r23, r21
+ 134:	d6 02       	muls	r29, r22
+ 136:	d6 02       	muls	r29, r22
+ 138:	6c 02       	muls	r22, r28
+ 13a:	83 02       	muls	r24, r19
+ 13c:	8d 02       	muls	r24, r29
+ 13e:	98 02       	muls	r25, r24
+
+00000140 <__ctors_end>:
+ 140:	11 24       	eor	r1, r1
+ 142:	1f be       	out	0x3f, r1	; 63
+ 144:	cf e5       	ldi	r28, 0x5F	; 95
+ 146:	d4 e0       	ldi	r29, 0x04	; 4
+ 148:	de bf       	out	0x3e, r29	; 62
+ 14a:	cd bf       	out	0x3d, r28	; 61
+
+0000014c <__do_copy_data>:
+ 14c:	10 e0       	ldi	r17, 0x00	; 0
+ 14e:	a0 e6       	ldi	r26, 0x60	; 96
+ 150:	b0 e0       	ldi	r27, 0x00	; 0
+ 152:	e2 e4       	ldi	r30, 0x42	; 66
+ 154:	fc e0       	ldi	r31, 0x0C	; 12
+ 156:	02 c0       	rjmp	.+4      	; 0x15c <__do_copy_data+0x10>
+ 158:	05 90       	lpm	r0, Z+
+ 15a:	0d 92       	st	X+, r0
+ 15c:	a8 38       	cpi	r26, 0x88	; 136
+ 15e:	b1 07       	cpc	r27, r17
+ 160:	d9 f7       	brne	.-10     	; 0x158 <__do_copy_data+0xc>
+
+00000162 <__do_clear_bss>:
+ 162:	20 e0       	ldi	r18, 0x00	; 0
+ 164:	a8 e8       	ldi	r26, 0x88	; 136
+ 166:	b0 e0       	ldi	r27, 0x00	; 0
+ 168:	01 c0       	rjmp	.+2      	; 0x16c <.do_clear_bss_start>
+
+0000016a <.do_clear_bss_loop>:
+ 16a:	1d 92       	st	X+, r1
+
+0000016c <.do_clear_bss_start>:
+ 16c:	a4 39       	cpi	r26, 0x94	; 148
+ 16e:	b2 07       	cpc	r27, r18
+ 170:	e1 f7       	brne	.-8      	; 0x16a <.do_clear_bss_loop>
+ 172:	0e 94 db 02 	call	0x5b6	; 0x5b6 <main>
+ 176:	0c 94 1f 06 	jmp	0xc3e	; 0xc3e <_exit>
+
+0000017a <__bad_interrupt>:
+ 17a:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000017e <__vector_1>:
+volatile uint8_t encodersig;
+
+//*******************************************************Interrupts*********************************************
+//Interrupt Flanke an INT0 A&B Signal Encoder
+ISR (INT0_vect)
+{
+ 17e:	1f 92       	push	r1
+ 180:	0f 92       	push	r0
+ 182:	0f b6       	in	r0, 0x3f	; 63
+ 184:	0f 92       	push	r0
+ 186:	11 24       	eor	r1, r1
+ 188:	2f 93       	push	r18
+ 18a:	3f 93       	push	r19
+ 18c:	4f 93       	push	r20
+ 18e:	5f 93       	push	r21
+ 190:	6f 93       	push	r22
+ 192:	7f 93       	push	r23
+ 194:	8f 93       	push	r24
+ 196:	9f 93       	push	r25
+ 198:	af 93       	push	r26
+ 19a:	bf 93       	push	r27
+ 19c:	ef 93       	push	r30
+ 19e:	ff 93       	push	r31
+	encodersig=Encoderdata(encodersig);												//Verarbeitung der Encoder daten
+ 1a0:	80 91 88 00 	lds	r24, 0x0088
+ 1a4:	0e 94 21 03 	call	0x642	; 0x642 <Encoderdata>
+ 1a8:	80 93 88 00 	sts	0x0088, r24
+	
+	//PORTC ^= (1<<PC4);		//bit invertieren zur lauftzeit messung
+		if ((encodersig & SOLLDREHRICHTUNG)==((encodersig&ISTDREHRICHTUNG)<<1))		//richtige Richtung?
+ 1ac:	20 91 88 00 	lds	r18, 0x0088
+ 1b0:	80 91 88 00 	lds	r24, 0x0088
+ 1b4:	20 78       	andi	r18, 0x80	; 128
+ 1b6:	30 e0       	ldi	r19, 0x00	; 0
+ 1b8:	80 74       	andi	r24, 0x40	; 64
+ 1ba:	90 e0       	ldi	r25, 0x00	; 0
+ 1bc:	88 0f       	add	r24, r24
+ 1be:	99 1f       	adc	r25, r25
+ 1c0:	28 17       	cp	r18, r24
+ 1c2:	39 07       	cpc	r19, r25
+ 1c4:	09 f0       	breq	.+2      	; 0x1c8 <__vector_1+0x4a>
+ 1c6:	4d c0       	rjmp	.+154    	; 0x262 <__vector_1+0xe4>
+		{
+			counter++;
+ 1c8:	80 91 8d 00 	lds	r24, 0x008D
+ 1cc:	90 91 8e 00 	lds	r25, 0x008E
+ 1d0:	01 96       	adiw	r24, 0x01	; 1
+ 1d2:	90 93 8e 00 	sts	0x008E, r25
+ 1d6:	80 93 8d 00 	sts	0x008D, r24
+			if (counter>counteralt)
+ 1da:	20 91 8d 00 	lds	r18, 0x008D
+ 1de:	30 91 8e 00 	lds	r19, 0x008E
+ 1e2:	80 91 92 00 	lds	r24, 0x0092
+ 1e6:	90 91 93 00 	lds	r25, 0x0093
+ 1ea:	82 17       	cp	r24, r18
+ 1ec:	93 07       	cpc	r25, r19
+ 1ee:	08 f0       	brcs	.+2      	; 0x1f2 <__vector_1+0x74>
+ 1f0:	41 c0       	rjmp	.+130    	; 0x274 <__vector_1+0xf6>
+			{
+				if(status==2 && temp_counter>= resolution)										//Status 2 = Messen und speichern
+ 1f2:	80 91 91 00 	lds	r24, 0x0091
+ 1f6:	82 30       	cpi	r24, 0x02	; 2
+ 1f8:	29 f5       	brne	.+74     	; 0x244 <__vector_1+0xc6>
+ 1fa:	90 91 89 00 	lds	r25, 0x0089
+ 1fe:	80 91 8a 00 	lds	r24, 0x008A
+ 202:	98 17       	cp	r25, r24
+ 204:	f8 f0       	brcs	.+62     	; 0x244 <__vector_1+0xc6>
+				{
+					status=100;														//Status 100 = messen und speichern
+ 206:	84 e6       	ldi	r24, 0x64	; 100
+ 208:	80 93 91 00 	sts	0x0091, r24
+					temp_counter=0;
+ 20c:	10 92 89 00 	sts	0x0089, r1
+					
+					uint16_t timer=0;
+					timer=TCNT1;
+ 210:	8c b5       	in	r24, 0x2c	; 44
+ 212:	9d b5       	in	r25, 0x2d	; 45
+					TCNT1=0;				//Timer 1 auf 0
+ 214:	1d bc       	out	0x2d, r1	; 45
+ 216:	1c bc       	out	0x2c, r1	; 44
+					
+					if (timer<18)		//18 entspricht 1.25 mS. Der Sensor benötigt min. ca. 1mS
+ 218:	42 97       	sbiw	r24, 0x12	; 18
+ 21a:	a0 f4       	brcc	.+40     	; 0x244 <__vector_1+0xc6>
+						{
+							write_status(LED_ON);								// Alle LEDS an entspricht fehler
+ 21c:	80 ee       	ldi	r24, 0xE0	; 224
+ 21e:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+							counter=0;												//zähler reseten
+ 222:	10 92 8e 00 	sts	0x008E, r1
+ 226:	10 92 8d 00 	sts	0x008D, r1
+							counteralt=0;
+ 22a:	10 92 93 00 	sts	0x0093, r1
+ 22e:	10 92 92 00 	sts	0x0092, r1
+							temp_counter=16;
+ 232:	80 e1       	ldi	r24, 0x10	; 16
+ 234:	80 93 89 00 	sts	0x0089, r24
+							speicher=0;
+ 238:	10 92 90 00 	sts	0x0090, r1
+ 23c:	10 92 8f 00 	sts	0x008F, r1
+							status=0;
+ 240:	10 92 91 00 	sts	0x0091, r1
+						}
+				}
+				temp_counter++;
+ 244:	80 91 89 00 	lds	r24, 0x0089
+ 248:	8f 5f       	subi	r24, 0xFF	; 255
+ 24a:	80 93 89 00 	sts	0x0089, r24
+				counteralt++;
+ 24e:	80 91 92 00 	lds	r24, 0x0092
+ 252:	90 91 93 00 	lds	r25, 0x0093
+ 256:	01 96       	adiw	r24, 0x01	; 1
+ 258:	90 93 93 00 	sts	0x0093, r25
+ 25c:	80 93 92 00 	sts	0x0092, r24
+ 260:	09 c0       	rjmp	.+18     	; 0x274 <__vector_1+0xf6>
+			}	
+		}
+		else			//falsche Richtung
+		{
+			counter--;
+ 262:	80 91 8d 00 	lds	r24, 0x008D
+ 266:	90 91 8e 00 	lds	r25, 0x008E
+ 26a:	01 97       	sbiw	r24, 0x01	; 1
+ 26c:	90 93 8e 00 	sts	0x008E, r25
+ 270:	80 93 8d 00 	sts	0x008D, r24
+		}
+
+}
+ 274:	ff 91       	pop	r31
+ 276:	ef 91       	pop	r30
+ 278:	bf 91       	pop	r27
+ 27a:	af 91       	pop	r26
+ 27c:	9f 91       	pop	r25
+ 27e:	8f 91       	pop	r24
+ 280:	7f 91       	pop	r23
+ 282:	6f 91       	pop	r22
+ 284:	5f 91       	pop	r21
+ 286:	4f 91       	pop	r20
+ 288:	3f 91       	pop	r19
+ 28a:	2f 91       	pop	r18
+ 28c:	0f 90       	pop	r0
+ 28e:	0f be       	out	0x3f, r0	; 63
+ 290:	0f 90       	pop	r0
+ 292:	1f 90       	pop	r1
+ 294:	18 95       	reti
+
+00000296 <__vector_2>:
+
+//Interrupt Funktion Positive Flanke an INT1 Z Signal Encoder
+ISR (INT1_vect)
+{
+ 296:	1f 92       	push	r1
+ 298:	0f 92       	push	r0
+ 29a:	0f b6       	in	r0, 0x3f	; 63
+ 29c:	0f 92       	push	r0
+ 29e:	11 24       	eor	r1, r1
+ 2a0:	2f 93       	push	r18
+ 2a2:	3f 93       	push	r19
+ 2a4:	4f 93       	push	r20
+ 2a6:	5f 93       	push	r21
+ 2a8:	6f 93       	push	r22
+ 2aa:	7f 93       	push	r23
+ 2ac:	8f 93       	push	r24
+ 2ae:	9f 93       	push	r25
+ 2b0:	af 93       	push	r26
+ 2b2:	bf 93       	push	r27
+ 2b4:	ef 93       	push	r30
+ 2b6:	ff 93       	push	r31
+	if ((status==2 || status==100) && counter>(ENCODERPULSE-10))
+ 2b8:	80 91 91 00 	lds	r24, 0x0091
+ 2bc:	82 30       	cpi	r24, 0x02	; 2
+ 2be:	21 f0       	breq	.+8      	; 0x2c8 <__vector_2+0x32>
+ 2c0:	80 91 91 00 	lds	r24, 0x0091
+ 2c4:	84 36       	cpi	r24, 0x64	; 100
+ 2c6:	69 f4       	brne	.+26     	; 0x2e2 <__vector_2+0x4c>
+ 2c8:	80 91 8d 00 	lds	r24, 0x008D
+ 2cc:	90 91 8e 00 	lds	r25, 0x008E
+ 2d0:	87 3b       	cpi	r24, 0xB7	; 183
+ 2d2:	9b 42       	sbci	r25, 0x2B	; 43
+ 2d4:	30 f0       	brcs	.+12     	; 0x2e2 <__vector_2+0x4c>
+	{
+			cli();
+ 2d6:	f8 94       	cli
+			status=status+1;											//Messung erfolgreich -> Status 3 ODER 101 Auslesen der Daten
+ 2d8:	80 91 91 00 	lds	r24, 0x0091
+ 2dc:	8f 5f       	subi	r24, 0xFF	; 255
+ 2de:	80 93 91 00 	sts	0x0091, r24
+	}
+	
+	if ((status==0 || status==1) && counter>1520 && counter<1680)				//Zwischen 9.5 und 10.5 Index Signal
+ 2e2:	80 91 91 00 	lds	r24, 0x0091
+ 2e6:	88 23       	and	r24, r24
+ 2e8:	21 f0       	breq	.+8      	; 0x2f2 <__vector_2+0x5c>
+ 2ea:	80 91 91 00 	lds	r24, 0x0091
+ 2ee:	81 30       	cpi	r24, 0x01	; 1
+ 2f0:	89 f5       	brne	.+98     	; 0x354 <__vector_2+0xbe>
+ 2f2:	80 91 8d 00 	lds	r24, 0x008D
+ 2f6:	90 91 8e 00 	lds	r25, 0x008E
+ 2fa:	81 3f       	cpi	r24, 0xF1	; 241
+ 2fc:	95 40       	sbci	r25, 0x05	; 5
+ 2fe:	50 f1       	brcs	.+84     	; 0x354 <__vector_2+0xbe>
+ 300:	80 91 8d 00 	lds	r24, 0x008D
+ 304:	90 91 8e 00 	lds	r25, 0x008E
+ 308:	80 39       	cpi	r24, 0x90	; 144
+ 30a:	96 40       	sbci	r25, 0x06	; 6
+ 30c:	18 f5       	brcc	.+70     	; 0x354 <__vector_2+0xbe>
+	{
+		uint8_t temp=0;
+		write_status(LED_OFF);										//Alle LED aus
+ 30e:	80 e0       	ldi	r24, 0x00	; 0
+ 310:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+		temp=(encodersig&ISTDREHRICHTUNG)<<1;
+ 314:	90 91 88 00 	lds	r25, 0x0088
+		encodersig=(encodersig&0b01111111)|temp;				//Aktuelle Drehrichtung = Soll Drehrichtung
+ 318:	80 91 88 00 	lds	r24, 0x0088
+	
+	if ((status==0 || status==1) && counter>1520 && counter<1680)				//Zwischen 9.5 und 10.5 Index Signal
+	{
+		uint8_t temp=0;
+		write_status(LED_OFF);										//Alle LED aus
+		temp=(encodersig&ISTDREHRICHTUNG)<<1;
+ 31c:	90 74       	andi	r25, 0x40	; 64
+ 31e:	99 0f       	add	r25, r25
+		encodersig=(encodersig&0b01111111)|temp;				//Aktuelle Drehrichtung = Soll Drehrichtung
+ 320:	8f 77       	andi	r24, 0x7F	; 127
+ 322:	89 2b       	or	r24, r25
+ 324:	80 93 88 00 	sts	0x0088, r24
+		counter=0;												//zähler reseten
+ 328:	10 92 8e 00 	sts	0x008E, r1
+ 32c:	10 92 8d 00 	sts	0x008D, r1
+		counteralt=0;
+ 330:	10 92 93 00 	sts	0x0093, r1
+ 334:	10 92 92 00 	sts	0x0092, r1
+		temp_counter=16;
+ 338:	80 e1       	ldi	r24, 0x10	; 16
+ 33a:	80 93 89 00 	sts	0x0089, r24
+		speicher=0;													//Alles auf 0 setzen
+ 33e:	10 92 90 00 	sts	0x0090, r1
+ 342:	10 92 8f 00 	sts	0x008F, r1
+		status=2;												//Status 2 Aufnahme der Ergebnisse
+ 346:	82 e0       	ldi	r24, 0x02	; 2
+ 348:	80 93 91 00 	sts	0x0091, r24
+		//write_status(YELLOWLED_1);
+		TCNT1=20;				//Timer 1 auf 20
+ 34c:	84 e1       	ldi	r24, 0x14	; 20
+ 34e:	90 e0       	ldi	r25, 0x00	; 0
+ 350:	9d bd       	out	0x2d, r25	; 45
+ 352:	8c bd       	out	0x2c, r24	; 44
+	}
+}
+ 354:	ff 91       	pop	r31
+ 356:	ef 91       	pop	r30
+ 358:	bf 91       	pop	r27
+ 35a:	af 91       	pop	r26
+ 35c:	9f 91       	pop	r25
+ 35e:	8f 91       	pop	r24
+ 360:	7f 91       	pop	r23
+ 362:	6f 91       	pop	r22
+ 364:	5f 91       	pop	r21
+ 366:	4f 91       	pop	r20
+ 368:	3f 91       	pop	r19
+ 36a:	2f 91       	pop	r18
+ 36c:	0f 90       	pop	r0
+ 36e:	0f be       	out	0x3f, r0	; 63
+ 370:	0f 90       	pop	r0
+ 372:	1f 90       	pop	r1
+ 374:	18 95       	reti
+
+00000376 <auslesen>:
+//**********************************************Funktionen*******************************************
+
+//SENDEN VON WERTEN FUNKTION
+void auslesen(void)
+{
+ 376:	cf 93       	push	r28
+ 378:	df 93       	push	r29
+ 37a:	cd b7       	in	r28, 0x3d	; 61
+ 37c:	de b7       	in	r29, 0x3e	; 62
+ 37e:	61 97       	sbiw	r28, 0x11	; 17
+ 380:	0f b6       	in	r0, 0x3f	; 63
+ 382:	f8 94       	cli
+ 384:	de bf       	out	0x3e, r29	; 62
+ 386:	0f be       	out	0x3f, r0	; 63
+ 388:	cd bf       	out	0x3d, r28	; 61
+	write_status(LED_ON);
+ 38a:	80 ee       	ldi	r24, 0xE0	; 224
+ 38c:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+	char string[] = "Messwerte:\n";
+ 390:	8c e0       	ldi	r24, 0x0C	; 12
+ 392:	e0 e6       	ldi	r30, 0x60	; 96
+ 394:	f0 e0       	ldi	r31, 0x00	; 0
+ 396:	de 01       	movw	r26, r28
+ 398:	11 96       	adiw	r26, 0x01	; 1
+ 39a:	01 90       	ld	r0, Z+
+ 39c:	0d 92       	st	X+, r0
+ 39e:	8a 95       	dec	r24
+ 3a0:	e1 f7       	brne	.-8      	; 0x39a <auslesen+0x24>
+	uart_puts(string);
+ 3a2:	ce 01       	movw	r24, r28
+ 3a4:	01 96       	adiw	r24, 0x01	; 1
+ 3a6:	0e 94 f8 04 	call	0x9f0	; 0x9f0 <uart_puts>
+	init_sram();
+ 3aa:	0e 94 3a 04 	call	0x874	; 0x874 <init_sram>
+	read_res_time(speicher);					//Werte auslesen
+ 3ae:	80 91 8f 00 	lds	r24, 0x008F
+ 3b2:	90 91 90 00 	lds	r25, 0x0090
+ 3b6:	0e 94 69 05 	call	0xad2	; 0xad2 <read_res_time>
+	status=0;
+ 3ba:	10 92 91 00 	sts	0x0091, r1
+	char string2[] = "END\n";
+ 3be:	85 e0       	ldi	r24, 0x05	; 5
+ 3c0:	ec e6       	ldi	r30, 0x6C	; 108
+ 3c2:	f0 e0       	ldi	r31, 0x00	; 0
+ 3c4:	de 01       	movw	r26, r28
+ 3c6:	1d 96       	adiw	r26, 0x0d	; 13
+ 3c8:	01 90       	ld	r0, Z+
+ 3ca:	0d 92       	st	X+, r0
+ 3cc:	8a 95       	dec	r24
+ 3ce:	e1 f7       	brne	.-8      	; 0x3c8 <auslesen+0x52>
+	uart_puts(string2);
+ 3d0:	ce 01       	movw	r24, r28
+ 3d2:	0d 96       	adiw	r24, 0x0d	; 13
+ 3d4:	0e 94 f8 04 	call	0x9f0	; 0x9f0 <uart_puts>
+	sei();
+ 3d8:	78 94       	sei
+}
+ 3da:	61 96       	adiw	r28, 0x11	; 17
+ 3dc:	0f b6       	in	r0, 0x3f	; 63
+ 3de:	f8 94       	cli
+ 3e0:	de bf       	out	0x3e, r29	; 62
+ 3e2:	0f be       	out	0x3f, r0	; 63
+ 3e4:	cd bf       	out	0x3d, r28	; 61
+ 3e6:	df 91       	pop	r29
+ 3e8:	cf 91       	pop	r28
+ 3ea:	08 95       	ret
+
+000003ec <zero>:
+
+void zero()
+{
+	//write_status(GREENLED_2);
+	counter=0;												//zähler reseten
+ 3ec:	10 92 8e 00 	sts	0x008E, r1
+ 3f0:	10 92 8d 00 	sts	0x008D, r1
+	counteralt=0;
+ 3f4:	10 92 93 00 	sts	0x0093, r1
+ 3f8:	10 92 92 00 	sts	0x0092, r1
+	temp_counter=16;
+ 3fc:	80 e1       	ldi	r24, 0x10	; 16
+ 3fe:	80 93 89 00 	sts	0x0089, r24
+	speicher=0;
+ 402:	10 92 90 00 	sts	0x0090, r1
+ 406:	10 92 8f 00 	sts	0x008F, r1
+ 40a:	08 95       	ret
+
+0000040c <measure>:
+
+
+//Einzelne Mesung durchführen
+
+void measure()
+{
+ 40c:	cf 93       	push	r28
+ 40e:	df 93       	push	r29
+ 410:	00 d0       	rcall	.+0      	; 0x412 <measure+0x6>
+ 412:	00 d0       	rcall	.+0      	; 0x414 <measure+0x8>
+ 414:	00 d0       	rcall	.+0      	; 0x416 <measure+0xa>
+ 416:	cd b7       	in	r28, 0x3d	; 61
+ 418:	de b7       	in	r29, 0x3e	; 62
+	int z,x,y;
+	singleshot(&x,&y,&z);
+ 41a:	ae 01       	movw	r20, r28
+ 41c:	4f 5f       	subi	r20, 0xFF	; 255
+ 41e:	5f 4f       	sbci	r21, 0xFF	; 255
+ 420:	be 01       	movw	r22, r28
+ 422:	6b 5f       	subi	r22, 0xFB	; 251
+ 424:	7f 4f       	sbci	r23, 0xFF	; 255
+ 426:	ce 01       	movw	r24, r28
+ 428:	03 96       	adiw	r24, 0x03	; 3
+ 42a:	0e 94 4c 03 	call	0x698	; 0x698 <singleshot>
+	save_data(speicher*6,x,y,z);
+ 42e:	80 91 8f 00 	lds	r24, 0x008F
+ 432:	90 91 90 00 	lds	r25, 0x0090
+ 436:	29 81       	ldd	r18, Y+1	; 0x01
+ 438:	3a 81       	ldd	r19, Y+2	; 0x02
+ 43a:	4d 81       	ldd	r20, Y+5	; 0x05
+ 43c:	5e 81       	ldd	r21, Y+6	; 0x06
+ 43e:	6b 81       	ldd	r22, Y+3	; 0x03
+ 440:	7c 81       	ldd	r23, Y+4	; 0x04
+ 442:	fc 01       	movw	r30, r24
+ 444:	ee 0f       	add	r30, r30
+ 446:	ff 1f       	adc	r31, r31
+ 448:	8e 0f       	add	r24, r30
+ 44a:	9f 1f       	adc	r25, r31
+ 44c:	88 0f       	add	r24, r24
+ 44e:	99 1f       	adc	r25, r25
+ 450:	0e 94 38 05 	call	0xa70	; 0xa70 <save_data>
+	speicher++;														// Speicheradresse erhöhen
+ 454:	80 91 8f 00 	lds	r24, 0x008F
+ 458:	90 91 90 00 	lds	r25, 0x0090
+ 45c:	01 96       	adiw	r24, 0x01	; 1
+ 45e:	90 93 90 00 	sts	0x0090, r25
+ 462:	80 93 8f 00 	sts	0x008F, r24
+	status=2;
+ 466:	82 e0       	ldi	r24, 0x02	; 2
+ 468:	80 93 91 00 	sts	0x0091, r24
+}
+ 46c:	26 96       	adiw	r28, 0x06	; 6
+ 46e:	0f b6       	in	r0, 0x3f	; 63
+ 470:	f8 94       	cli
+ 472:	de bf       	out	0x3e, r29	; 62
+ 474:	0f be       	out	0x3f, r0	; 63
+ 476:	cd bf       	out	0x3d, r28	; 61
+ 478:	df 91       	pop	r29
+ 47a:	cf 91       	pop	r28
+ 47c:	08 95       	ret
+
+0000047e <check_drehrichtung>:
+
+void check_drehrichtung()
+{
+	if ((status==0||status==1) && (counter>ENCODERPULSE))						//ändern der drehrichtung
+ 47e:	80 91 91 00 	lds	r24, 0x0091
+ 482:	88 23       	and	r24, r24
+ 484:	21 f0       	breq	.+8      	; 0x48e <check_drehrichtung+0x10>
+ 486:	80 91 91 00 	lds	r24, 0x0091
+ 48a:	81 30       	cpi	r24, 0x01	; 1
+ 48c:	99 f4       	brne	.+38     	; 0x4b4 <check_drehrichtung+0x36>
+ 48e:	80 91 8d 00 	lds	r24, 0x008D
+ 492:	90 91 8e 00 	lds	r25, 0x008E
+ 496:	81 3c       	cpi	r24, 0xC1	; 193
+ 498:	9b 42       	sbci	r25, 0x2B	; 43
+ 49a:	60 f0       	brcs	.+24     	; 0x4b4 <check_drehrichtung+0x36>
+	{
+		uint8_t temp=0;
+		temp=(encodersig&ISTDREHRICHTUNG)<<1;
+ 49c:	80 91 88 00 	lds	r24, 0x0088
+		encodersig=(encodersig&0b01111111)|temp;				//Aktuelle Drehrichtung = Soll Drehrichtung
+ 4a0:	90 91 88 00 	lds	r25, 0x0088
+void check_drehrichtung()
+{
+	if ((status==0||status==1) && (counter>ENCODERPULSE))						//ändern der drehrichtung
+	{
+		uint8_t temp=0;
+		temp=(encodersig&ISTDREHRICHTUNG)<<1;
+ 4a4:	80 74       	andi	r24, 0x40	; 64
+ 4a6:	88 0f       	add	r24, r24
+		encodersig=(encodersig&0b01111111)|temp;				//Aktuelle Drehrichtung = Soll Drehrichtung
+ 4a8:	9f 77       	andi	r25, 0x7F	; 127
+ 4aa:	89 2b       	or	r24, r25
+ 4ac:	80 93 88 00 	sts	0x0088, r24
+		zero();
+ 4b0:	0e 94 f6 01 	call	0x3ec	; 0x3ec <zero>
+ 4b4:	08 95       	ret
+
+000004b6 <uartempfangen>:
+//EMPFANG FUNKTION
+void uartempfangen (void)
+{
+	uint8_t empfang;
+	
+	empfang=check_uart();
+ 4b6:	0e 94 26 05 	call	0xa4c	; 0xa4c <check_uart>
+	switch(empfang)
+ 4ba:	90 e0       	ldi	r25, 0x00	; 0
+ 4bc:	86 37       	cpi	r24, 0x76	; 118
+ 4be:	91 05       	cpc	r25, r1
+ 4c0:	08 f0       	brcs	.+2      	; 0x4c4 <uartempfangen+0xe>
+ 4c2:	74 c0       	rjmp	.+232    	; 0x5ac <uartempfangen+0xf6>
+ 4c4:	fc 01       	movw	r30, r24
+ 4c6:	e6 5d       	subi	r30, 0xD6	; 214
+ 4c8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4ca:	0c 94 e4 05 	jmp	0xbc8	; 0xbc8 <__tablejump2__>
+	{
+		case 'g': status=0;singlemeasurement();break;		//einzelne Messung
+ 4ce:	10 92 91 00 	sts	0x0091, r1
+ 4d2:	0e 94 8c 03 	call	0x718	; 0x718 <singlemeasurement>
+ 4d6:	08 95       	ret
+		case 'r': status=0;reset_hallsensor();break;		//Reset Hallsonde
+ 4d8:	10 92 91 00 	sts	0x0091, r1
+ 4dc:	0e 94 20 04 	call	0x840	; 0x840 <reset_hallsensor>
+ 4e0:	08 95       	ret
+		case 'i': UDR=status;break;							//Status abfragen
+ 4e2:	80 91 91 00 	lds	r24, 0x0091
+ 4e6:	8c b9       	out	0x0c, r24	; 12
+ 4e8:	08 95       	ret
+		case 'o': send_sword(speicher);break;
+ 4ea:	80 91 8f 00 	lds	r24, 0x008F
+ 4ee:	90 91 90 00 	lds	r25, 0x0090
+ 4f2:	0e 94 07 05 	call	0xa0e	; 0xa0e <send_sword>
+ 4f6:	08 95       	ret
+		case 'c': send_word(counter);break;					//send_word(counter)
+ 4f8:	80 91 8d 00 	lds	r24, 0x008D
+ 4fc:	90 91 8e 00 	lds	r25, 0x008E
+ 500:	0e 94 ed 04 	call	0x9da	; 0x9da <send_word>
+ 504:	08 95       	ret
+		case 's': status=0;speed_test();break;
+ 506:	10 92 91 00 	sts	0x0091, r1
+ 50a:	0e 94 ae 04 	call	0x95c	; 0x95c <speed_test>
+ 50e:	08 95       	ret
+		case 'k': status=0;temperatur();break;
+ 510:	10 92 91 00 	sts	0x0091, r1
+ 514:	0e 94 c2 03 	call	0x784	; 0x784 <temperatur>
+ 518:	08 95       	ret
+		case 't': status=0;Testmodus();break;				//Testmodus der LED
+ 51a:	10 92 91 00 	sts	0x0091, r1
+ 51e:	0e 94 7e 04 	call	0x8fc	; 0x8fc <Testmodus>
+ 522:	08 95       	ret
+		case 'm': status=1;zero();break;					//Warte auf Z Impuls
+ 524:	81 e0       	ldi	r24, 0x01	; 1
+ 526:	80 93 91 00 	sts	0x0091, r24
+ 52a:	0e 94 f6 01 	call	0x3ec	; 0x3ec <zero>
+ 52e:	08 95       	ret
+		case 'u': status=0;break;							//Messung abgebrochen
+ 530:	10 92 91 00 	sts	0x0091, r1
+ 534:	08 95       	ret
+		case 'h':status=0;IDN();break;						//Anfrage COMPORT Labview
+ 536:	10 92 91 00 	sts	0x0091, r1
+ 53a:	0e 94 3d 04 	call	0x87a	; 0x87a <IDN>
+ 53e:	08 95       	ret
+		case '1':write_status(G_T_LED);break;					
+ 540:	80 e2       	ldi	r24, 0x20	; 32
+ 542:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+ 546:	08 95       	ret
+		case '2':write_status(B_T_LED);break;
+ 548:	80 e4       	ldi	r24, 0x40	; 64
+ 54a:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+ 54e:	08 95       	ret
+		case '3':write_status(GOOD_LED);break;
+ 550:	80 ea       	ldi	r24, 0xA0	; 160
+ 552:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+ 556:	08 95       	ret
+		case '4':write_status(BAD_LED);break;
+ 558:	80 ec       	ldi	r24, 0xC0	; 192
+ 55a:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+ 55e:	08 95       	ret
+		case '5':write_status(255);break;
+ 560:	8f ef       	ldi	r24, 0xFF	; 255
+ 562:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+ 566:	08 95       	ret
+		case '6':write_status(0);break;
+ 568:	80 e0       	ldi	r24, 0x00	; 0
+ 56a:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+ 56e:	08 95       	ret
+		case 'Q':status=0;resolution= sehrhoch;break;		//Einstellung der Messpunkte
+ 570:	10 92 91 00 	sts	0x0091, r1
+ 574:	8a e0       	ldi	r24, 0x0A	; 10
+ 576:	80 93 8a 00 	sts	0x008A, r24
+ 57a:	08 95       	ret
+		case 'W':status=0;resolution= hoch;break;
+ 57c:	10 92 91 00 	sts	0x0091, r1
+ 580:	80 e1       	ldi	r24, 0x10	; 16
+ 582:	80 93 8a 00 	sts	0x008A, r24
+ 586:	08 95       	ret
+		case 'E':status=0;resolution= mittelhoch;break;
+ 588:	10 92 91 00 	sts	0x0091, r1
+ 58c:	84 e1       	ldi	r24, 0x14	; 20
+ 58e:	80 93 8a 00 	sts	0x008A, r24
+ 592:	08 95       	ret
+		case 'R':status=0;resolution=mittel;break;
+ 594:	10 92 91 00 	sts	0x0091, r1
+ 598:	89 e1       	ldi	r24, 0x19	; 25
+ 59a:	80 93 8a 00 	sts	0x008A, r24
+ 59e:	08 95       	ret
+		case 'T':status=0;resolution=niedrig;break;
+ 5a0:	10 92 91 00 	sts	0x0091, r1
+ 5a4:	8c e1       	ldi	r24, 0x1C	; 28
+ 5a6:	80 93 8a 00 	sts	0x008A, r24
+ 5aa:	08 95       	ret
+		case   0: break;									//nichts empfangen nichts machen
+		default: UDR='R';status=0;break;					//Fehler-> Falsches Zeichen empfangen
+ 5ac:	82 e5       	ldi	r24, 0x52	; 82
+ 5ae:	8c b9       	out	0x0c, r24	; 12
+ 5b0:	10 92 91 00 	sts	0x0091, r1
+ 5b4:	08 95       	ret
+
+000005b6 <main>:
+//ENDE FUNKTIONEN
+int main(void)
+{
+	while(1)
+	{
+		init();
+ 5b6:	0e 94 54 04 	call	0x8a8	; 0x8a8 <init>
+		status = 0;
+ 5ba:	10 92 91 00 	sts	0x0091, r1
+		counter=0;
+ 5be:	10 92 8e 00 	sts	0x008E, r1
+ 5c2:	10 92 8d 00 	sts	0x008D, r1
+		write_status(LED_ON);								// Alle LEDS an
+ 5c6:	80 ee       	ldi	r24, 0xE0	; 224
+ 5c8:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+		resolution=16;
+ 5cc:	80 e1       	ldi	r24, 0x10	; 16
+ 5ce:	80 93 8a 00 	sts	0x008A, r24
+		sei();
+ 5d2:	78 94       	sei
+		while (1)										// unentliche schleife
+		{
+			
+			check_drehrichtung();								//überprüfe soll drehrichtung
+ 5d4:	0e 94 3f 02 	call	0x47e	; 0x47e <check_drehrichtung>
+			
+			switch(status)
+ 5d8:	80 91 91 00 	lds	r24, 0x0091
+ 5dc:	82 30       	cpi	r24, 0x02	; 2
+ 5de:	99 f0       	breq	.+38     	; 0x606 <main+0x50>
+ 5e0:	28 f4       	brcc	.+10     	; 0x5ec <main+0x36>
+ 5e2:	88 23       	and	r24, r24
+ 5e4:	51 f0       	breq	.+20     	; 0x5fa <main+0x44>
+ 5e6:	81 30       	cpi	r24, 0x01	; 1
+ 5e8:	59 f0       	breq	.+22     	; 0x600 <main+0x4a>
+ 5ea:	19 c0       	rjmp	.+50     	; 0x61e <main+0x68>
+ 5ec:	84 36       	cpi	r24, 0x64	; 100
+ 5ee:	89 f0       	breq	.+34     	; 0x612 <main+0x5c>
+ 5f0:	85 36       	cpi	r24, 0x65	; 101
+ 5f2:	91 f0       	breq	.+36     	; 0x618 <main+0x62>
+ 5f4:	83 30       	cpi	r24, 0x03	; 3
+ 5f6:	99 f4       	brne	.+38     	; 0x61e <main+0x68>
+ 5f8:	09 c0       	rjmp	.+18     	; 0x60c <main+0x56>
+			{
+				case 0: uartempfangen();break; //check_button();break;	// warten bis LABVIEW bereit
+ 5fa:	0e 94 5b 02 	call	0x4b6	; 0x4b6 <uartempfangen>
+ 5fe:	ea cf       	rjmp	.-44     	; 0x5d4 <main+0x1e>
+				case 1: uartempfangen();break;					//Counter auf 0 Setzen für neue Messung
+ 600:	0e 94 5b 02 	call	0x4b6	; 0x4b6 <uartempfangen>
+ 604:	e7 cf       	rjmp	.-50     	; 0x5d4 <main+0x1e>
+				case 2: uartempfangen();break;					//Messung im gange
+ 606:	0e 94 5b 02 	call	0x4b6	; 0x4b6 <uartempfangen>
+ 60a:	e4 cf       	rjmp	.-56     	; 0x5d4 <main+0x1e>
+				case 3: auslesen();break;						//Daten zurückschicken auslesen
+ 60c:	0e 94 bb 01 	call	0x376	; 0x376 <auslesen>
+ 610:	e1 cf       	rjmp	.-62     	; 0x5d4 <main+0x1e>
+				case 100:measure();break;
+ 612:	0e 94 06 02 	call	0x40c	; 0x40c <measure>
+ 616:	de cf       	rjmp	.-68     	; 0x5d4 <main+0x1e>
+				case 101:auslesen();break;
+ 618:	0e 94 bb 01 	call	0x376	; 0x376 <auslesen>
+ 61c:	db cf       	rjmp	.-74     	; 0x5d4 <main+0x1e>
+				//case 90: datenaufnahme();break;
+				default: status=0;break;						//default = neustart
+ 61e:	10 92 91 00 	sts	0x0091, r1
+ 622:	d8 cf       	rjmp	.-80     	; 0x5d4 <main+0x1e>
+
+00000624 <Drehrichtung>:
+
+
+uint8_t Drehrichtung(uint8_t encodersig)			//Überprüft die Drehrichtung
+{	
+	uint8_t rechtslauf=FALSE;						//Variable True=1= Rechtslauf
+	uint8_t altakt=encodersig & AB_ALT_NEU;			//Nur altes und neues AB Signal
+ 624:	8f 70       	andi	r24, 0x0F	; 15
+	
+	switch (altakt)
+ 626:	84 30       	cpi	r24, 0x04	; 4
+ 628:	51 f0       	breq	.+20     	; 0x63e <Drehrichtung+0x1a>
+ 62a:	18 f4       	brcc	.+6      	; 0x632 <Drehrichtung+0xe>
+ 62c:	82 30       	cpi	r24, 0x02	; 2
+ 62e:	29 f4       	brne	.+10     	; 0x63a <Drehrichtung+0x16>
+ 630:	06 c0       	rjmp	.+12     	; 0x63e <Drehrichtung+0x1a>
+ 632:	8b 30       	cpi	r24, 0x0B	; 11
+ 634:	21 f0       	breq	.+8      	; 0x63e <Drehrichtung+0x1a>
+ 636:	8d 30       	cpi	r24, 0x0D	; 13
+ 638:	11 f0       	breq	.+4      	; 0x63e <Drehrichtung+0x1a>
+	{
+		case 1:	rechtslauf=TRUE;	break;
+ 63a:	80 e4       	ldi	r24, 0x40	; 64
+ 63c:	08 95       	ret
+		case 2:	rechtslauf=FALSE;	break;
+ 63e:	80 e0       	ldi	r24, 0x00	; 0
+		case 14:rechtslauf=TRUE;	break;
+		default:rechtslauf=TRUE;	break;
+	}
+	
+	return(rechtslauf);								//Rechtslauf= 64
+}
+ 640:	08 95       	ret
+
+00000642 <Encoderdata>:
+
+
+uint8_t Encoderdata(uint8_t encodersig)
+{
+ 642:	cf 93       	push	r28
+	uint8_t temp;
+	uint8_t temp2;
+	
+	temp=(PINC & PORTC_AB)>>SHIFT_AB;									//AB Signal einlesen und auf bit 0&1 schieben
+ 644:	93 b3       	in	r25, 0x13	; 19
+	temp2=encodersig & ~(AB_NEU);										//Neus AB Signal in encoder sig einfügen 0b11111100
+ 646:	8c 7f       	andi	r24, 0xFC	; 252
+uint8_t Encoderdata(uint8_t encodersig)
+{
+	uint8_t temp;
+	uint8_t temp2;
+	
+	temp=(PINC & PORTC_AB)>>SHIFT_AB;									//AB Signal einlesen und auf bit 0&1 schieben
+ 648:	c9 2f       	mov	r28, r25
+ 64a:	c0 76       	andi	r28, 0x60	; 96
+ 64c:	c2 95       	swap	r28
+ 64e:	c6 95       	lsr	r28
+ 650:	c7 70       	andi	r28, 0x07	; 7
+	temp2=encodersig & ~(AB_NEU);										//Neus AB Signal in encoder sig einfügen 0b11111100
+	encodersig=temp|temp2;												//Aktuelles AB Signal in encoder sig einfügen
+ 652:	c8 2b       	or	r28, r24
+	temp=Drehrichtung(encodersig);
+ 654:	8c 2f       	mov	r24, r28
+ 656:	0e 94 12 03 	call	0x624	; 0x624 <Drehrichtung>
+	temp2=encodersig & ~(ISTDREHRICHTUNG);								//(0b10111111)
+ 65a:	cf 7b       	andi	r28, 0xBF	; 191
+	encodersig= temp|temp2;												//Nur das Ist drehrichtungs Bit setzen
+ 65c:	c8 2b       	or	r28, r24
+	encodersig= (encodersig&~(AB_ALT))|((AB_NEU & encodersig)<<2);		//Aktuelles AB Signal auf Bit 2&3 verschieben
+ 65e:	8c 2f       	mov	r24, r28
+ 660:	83 70       	andi	r24, 0x03	; 3
+ 662:	88 0f       	add	r24, r24
+ 664:	88 0f       	add	r24, r24
+ 666:	c3 7f       	andi	r28, 0xF3	; 243
+
+	return(encodersig);													//verarbeitete Daten wider ausgeben
+}
+ 668:	8c 2b       	or	r24, r28
+ 66a:	cf 91       	pop	r28
+ 66c:	08 95       	ret
+
+0000066e <result>:
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+	
+}
+
+int result(uint8_t speicher)
+{
+ 66e:	1f 93       	push	r17
+ 670:	cf 93       	push	r28
+ 672:	df 93       	push	r29
+ 674:	18 2f       	mov	r17, r24
+	int data;
+	int data2;
+	
+	data=send_read_spi(0x01);
+ 676:	81 e0       	ldi	r24, 0x01	; 1
+ 678:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+ 67c:	c8 2f       	mov	r28, r24
+ 67e:	d0 e0       	ldi	r29, 0x00	; 0
+	data=data<<8;
+ 680:	dc 2f       	mov	r29, r28
+ 682:	cc 27       	eor	r28, r28
+	data2=send_read_spi(speicher);
+ 684:	81 2f       	mov	r24, r17
+ 686:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	data=data | data2;
+	return(data);	
+}
+ 68a:	9e 01       	movw	r18, r28
+ 68c:	28 2b       	or	r18, r24
+ 68e:	c9 01       	movw	r24, r18
+ 690:	df 91       	pop	r29
+ 692:	cf 91       	pop	r28
+ 694:	1f 91       	pop	r17
+ 696:	08 95       	ret
+
+00000698 <singleshot>:
+ */
+
+#include "FH5401C.h"
+
+void singleshot(int *z, int *x, int*y )
+{
+ 698:	ef 92       	push	r14
+ 69a:	ff 92       	push	r15
+ 69c:	0f 93       	push	r16
+ 69e:	1f 93       	push	r17
+ 6a0:	cf 93       	push	r28
+ 6a2:	df 93       	push	r29
+ 6a4:	7c 01       	movw	r14, r24
+ 6a6:	8b 01       	movw	r16, r22
+ 6a8:	ea 01       	movw	r28, r20
+	PORTB &= ~(1<<CS_FH5401);			//CS Hallsensor einschalten
+ 6aa:	c4 98       	cbi	0x18, 4	; 24
+	//PORTC |= (1<<PC3);					//Laufzeitmessung
+	
+	send_read_spi(0x80);
+ 6ac:	80 e8       	ldi	r24, 0x80	; 128
+ 6ae:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x0E);
+ 6b2:	8e e0       	ldi	r24, 0x0E	; 14
+ 6b4:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x00);
+ 6b8:	80 e0       	ldi	r24, 0x00	; 0
+ 6ba:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x01);				//Modus Singleshot
+ 6be:	81 e0       	ldi	r24, 0x01	; 1
+ 6c0:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+
+	while ( !(PINC & (1<<READY_FH5401))); //CHECK READY SIGNAL
+ 6c4:	9c 9b       	sbis	0x13, 4	; 19
+ 6c6:	fe cf       	rjmp	.-4      	; 0x6c4 <singleshot+0x2c>
+	
+	send_read_spi(0x01);
+ 6c8:	81 e0       	ldi	r24, 0x01	; 1
+ 6ca:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x22);
+ 6ce:	82 e2       	ldi	r24, 0x22	; 34
+ 6d0:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x01);
+ 6d4:	81 e0       	ldi	r24, 0x01	; 1
+ 6d6:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x10);				//Ready Signal reset
+ 6da:	80 e1       	ldi	r24, 0x10	; 16
+ 6dc:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+
+	result(HALL_Z);
+ 6e0:	82 e1       	ldi	r24, 0x12	; 18
+ 6e2:	0e 94 37 03 	call	0x66e	; 0x66e <result>
+	*z = result(HALL_X);
+ 6e6:	83 e1       	ldi	r24, 0x13	; 19
+ 6e8:	0e 94 37 03 	call	0x66e	; 0x66e <result>
+ 6ec:	f7 01       	movw	r30, r14
+ 6ee:	91 83       	std	Z+1, r25	; 0x01
+ 6f0:	80 83       	st	Z, r24
+	*x = result(HALL_Y);
+ 6f2:	84 e1       	ldi	r24, 0x14	; 20
+ 6f4:	0e 94 37 03 	call	0x66e	; 0x66e <result>
+ 6f8:	f8 01       	movw	r30, r16
+ 6fa:	91 83       	std	Z+1, r25	; 0x01
+ 6fc:	80 83       	st	Z, r24
+	*y = result(HALL_Z);
+ 6fe:	82 e1       	ldi	r24, 0x12	; 18
+ 700:	0e 94 37 03 	call	0x66e	; 0x66e <result>
+ 704:	99 83       	std	Y+1, r25	; 0x01
+ 706:	88 83       	st	Y, r24
+	
+	
+	//PORTC &=  ~(1<<PC3);				//Laufzeitmessung
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+ 708:	c4 9a       	sbi	0x18, 4	; 24
+}
+ 70a:	df 91       	pop	r29
+ 70c:	cf 91       	pop	r28
+ 70e:	1f 91       	pop	r17
+ 710:	0f 91       	pop	r16
+ 712:	ff 90       	pop	r15
+ 714:	ef 90       	pop	r14
+ 716:	08 95       	ret
+
+00000718 <singlemeasurement>:
+
+void singlemeasurement()
+{
+ 718:	cf 93       	push	r28
+ 71a:	df 93       	push	r29
+ 71c:	00 d0       	rcall	.+0      	; 0x71e <singlemeasurement+0x6>
+ 71e:	00 d0       	rcall	.+0      	; 0x720 <singlemeasurement+0x8>
+ 720:	00 d0       	rcall	.+0      	; 0x722 <singlemeasurement+0xa>
+ 722:	cd b7       	in	r28, 0x3d	; 61
+ 724:	de b7       	in	r29, 0x3e	; 62
+	int z,x,y;
+	singleshot(&x,&y,&z);
+ 726:	ae 01       	movw	r20, r28
+ 728:	4f 5f       	subi	r20, 0xFF	; 255
+ 72a:	5f 4f       	sbci	r21, 0xFF	; 255
+ 72c:	be 01       	movw	r22, r28
+ 72e:	6b 5f       	subi	r22, 0xFB	; 251
+ 730:	7f 4f       	sbci	r23, 0xFF	; 255
+ 732:	ce 01       	movw	r24, r28
+ 734:	03 96       	adiw	r24, 0x03	; 3
+ 736:	0e 94 4c 03 	call	0x698	; 0x698 <singleshot>
+	
+	UDR = 'Z';							
+ 73a:	8a e5       	ldi	r24, 0x5A	; 90
+ 73c:	8c b9       	out	0x0c, r24	; 12
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ 73e:	5d 9b       	sbis	0x0b, 5	; 11
+ 740:	fe cf       	rjmp	.-4      	; 0x73e <singlemeasurement+0x26>
+	send_sword(z);
+ 742:	89 81       	ldd	r24, Y+1	; 0x01
+ 744:	9a 81       	ldd	r25, Y+2	; 0x02
+ 746:	0e 94 07 05 	call	0xa0e	; 0xa0e <send_sword>
+	UDR = 'X';
+ 74a:	88 e5       	ldi	r24, 0x58	; 88
+ 74c:	8c b9       	out	0x0c, r24	; 12
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ 74e:	5d 9b       	sbis	0x0b, 5	; 11
+ 750:	fe cf       	rjmp	.-4      	; 0x74e <singlemeasurement+0x36>
+	send_sword(x);
+ 752:	8b 81       	ldd	r24, Y+3	; 0x03
+ 754:	9c 81       	ldd	r25, Y+4	; 0x04
+ 756:	0e 94 07 05 	call	0xa0e	; 0xa0e <send_sword>
+	UDR = 'Y';
+ 75a:	89 e5       	ldi	r24, 0x59	; 89
+ 75c:	8c b9       	out	0x0c, r24	; 12
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ 75e:	5d 9b       	sbis	0x0b, 5	; 11
+ 760:	fe cf       	rjmp	.-4      	; 0x75e <singlemeasurement+0x46>
+	send_sword(y);
+ 762:	8d 81       	ldd	r24, Y+5	; 0x05
+ 764:	9e 81       	ldd	r25, Y+6	; 0x06
+ 766:	0e 94 07 05 	call	0xa0e	; 0xa0e <send_sword>
+	UDR = 10;							// Ende String Zeichen
+ 76a:	8a e0       	ldi	r24, 0x0A	; 10
+ 76c:	8c b9       	out	0x0c, r24	; 12
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ 76e:	5d 9b       	sbis	0x0b, 5	; 11
+ 770:	fe cf       	rjmp	.-4      	; 0x76e <singlemeasurement+0x56>
+	
+}
+ 772:	26 96       	adiw	r28, 0x06	; 6
+ 774:	0f b6       	in	r0, 0x3f	; 63
+ 776:	f8 94       	cli
+ 778:	de bf       	out	0x3e, r29	; 62
+ 77a:	0f be       	out	0x3f, r0	; 63
+ 77c:	cd bf       	out	0x3d, r28	; 61
+ 77e:	df 91       	pop	r29
+ 780:	cf 91       	pop	r28
+ 782:	08 95       	ret
+
+00000784 <temperatur>:
+	data=data | data2;
+	return(data);	
+}
+
+void temperatur()
+{
+ 784:	0f 93       	push	r16
+ 786:	1f 93       	push	r17
+ 788:	cf 93       	push	r28
+ 78a:	df 93       	push	r29
+ 78c:	cd b7       	in	r28, 0x3d	; 61
+ 78e:	de b7       	in	r29, 0x3e	; 62
+ 790:	2e 97       	sbiw	r28, 0x0e	; 14
+ 792:	0f b6       	in	r0, 0x3f	; 63
+ 794:	f8 94       	cli
+ 796:	de bf       	out	0x3e, r29	; 62
+ 798:	0f be       	out	0x3f, r0	; 63
+ 79a:	cd bf       	out	0x3d, r28	; 61
+	PORTB &= ~(1<<CS_FH5401);			//CS Hallsensor einschalten
+ 79c:	c4 98       	cbi	0x18, 4	; 24
+	uint8_t highb;
+	uint8_t lowb;
+	int antwort;
+	int z,x,y;
+	singleshot(&x,&y,&z);
+ 79e:	ae 01       	movw	r20, r28
+ 7a0:	4f 5f       	subi	r20, 0xFF	; 255
+ 7a2:	5f 4f       	sbci	r21, 0xFF	; 255
+ 7a4:	be 01       	movw	r22, r28
+ 7a6:	6b 5f       	subi	r22, 0xFB	; 251
+ 7a8:	7f 4f       	sbci	r23, 0xFF	; 255
+ 7aa:	ce 01       	movw	r24, r28
+ 7ac:	03 96       	adiw	r24, 0x03	; 3
+ 7ae:	0e 94 4c 03 	call	0x698	; 0x698 <singleshot>
+	PORTB &= ~(1<<CS_FH5401);			//CS Hallsensor einschalten
+ 7b2:	c4 98       	cbi	0x18, 4	; 24
+
+	send_read_spi(0x01);
+ 7b4:	81 e0       	ldi	r24, 0x01	; 1
+ 7b6:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x10);
+ 7ba:	80 e1       	ldi	r24, 0x10	; 16
+ 7bc:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+
+	highb=send_read_spi(0x01);
+ 7c0:	81 e0       	ldi	r24, 0x01	; 1
+ 7c2:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+ 7c6:	08 2f       	mov	r16, r24
+	lowb=send_read_spi(0x10);
+ 7c8:	80 e1       	ldi	r24, 0x10	; 16
+ 7ca:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	
+	antwort=lowb | (highb<<8);
+ 7ce:	10 e0       	ldi	r17, 0x00	; 0
+ 7d0:	10 2f       	mov	r17, r16
+ 7d2:	00 27       	eor	r16, r16
+ 7d4:	08 2b       	or	r16, r24
+	char string[] = "Temp.:\n";
+ 7d6:	88 e0       	ldi	r24, 0x08	; 8
+ 7d8:	e7 e7       	ldi	r30, 0x77	; 119
+ 7da:	f0 e0       	ldi	r31, 0x00	; 0
+ 7dc:	de 01       	movw	r26, r28
+ 7de:	17 96       	adiw	r26, 0x07	; 7
+ 7e0:	01 90       	ld	r0, Z+
+ 7e2:	0d 92       	st	X+, r0
+ 7e4:	8a 95       	dec	r24
+ 7e6:	e1 f7       	brne	.-8      	; 0x7e0 <temperatur+0x5c>
+	uart_puts(string);
+ 7e8:	ce 01       	movw	r24, r28
+ 7ea:	07 96       	adiw	r24, 0x07	; 7
+ 7ec:	0e 94 f8 04 	call	0x9f0	; 0x9f0 <uart_puts>
+	send_sword(antwort);
+ 7f0:	c8 01       	movw	r24, r16
+ 7f2:	0e 94 07 05 	call	0xa0e	; 0xa0e <send_sword>
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+ 7f6:	c4 9a       	sbi	0x18, 4	; 24
+}
+ 7f8:	2e 96       	adiw	r28, 0x0e	; 14
+ 7fa:	0f b6       	in	r0, 0x3f	; 63
+ 7fc:	f8 94       	cli
+ 7fe:	de bf       	out	0x3e, r29	; 62
+ 800:	0f be       	out	0x3f, r0	; 63
+ 802:	cd bf       	out	0x3d, r28	; 61
+ 804:	df 91       	pop	r29
+ 806:	cf 91       	pop	r28
+ 808:	1f 91       	pop	r17
+ 80a:	0f 91       	pop	r16
+ 80c:	08 95       	ret
+
+0000080e <check_ready>:
+	init_5401();
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+}
+
+uint16_t check_ready()
+{
+ 80e:	cf 93       	push	r28
+	uint8_t highb;
+	uint8_t lowb;
+	uint16_t antwort;
+	PORTB &= ~(1<<CS_FH5401);			//CS Hallsensor einschalten
+ 810:	c4 98       	cbi	0x18, 4	; 24
+	send_read_spi(0x01);
+ 812:	81 e0       	ldi	r24, 0x01	; 1
+ 814:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x07);
+ 818:	87 e0       	ldi	r24, 0x07	; 7
+ 81a:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	highb=send_read_spi(0x01);
+ 81e:	81 e0       	ldi	r24, 0x01	; 1
+ 820:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+ 824:	c8 2f       	mov	r28, r24
+	lowb=send_read_spi(0x07);
+ 826:	87 e0       	ldi	r24, 0x07	; 7
+ 828:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	antwort=lowb|(highb<<8);
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+ 82c:	c4 9a       	sbi	0x18, 4	; 24
+	PORTB &= ~(1<<CS_FH5401);			//CS Hallsensor einschalten
+	send_read_spi(0x01);
+	send_read_spi(0x07);
+	highb=send_read_spi(0x01);
+	lowb=send_read_spi(0x07);
+	antwort=lowb|(highb<<8);
+ 82e:	2c 2f       	mov	r18, r28
+ 830:	30 e0       	ldi	r19, 0x00	; 0
+ 832:	32 2f       	mov	r19, r18
+ 834:	22 27       	eor	r18, r18
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+	return(antwort);
+}
+ 836:	a9 01       	movw	r20, r18
+ 838:	48 2b       	or	r20, r24
+ 83a:	ca 01       	movw	r24, r20
+ 83c:	cf 91       	pop	r28
+ 83e:	08 95       	ret
+
+00000840 <reset_hallsensor>:
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+}
+
+void reset_hallsensor()
+{
+	PORTB &= ~(1<<CS_FH5401);			//CS Hallsensor einschalten
+ 840:	c4 98       	cbi	0x18, 4	; 24
+	PORTB &= ~(1<<RESET_FH5401);		//RESET Ein
+ 842:	c2 98       	cbi	0x18, 2	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 844:	2f ef       	ldi	r18, 0xFF	; 255
+ 846:	8f e7       	ldi	r24, 0x7F	; 127
+ 848:	96 e1       	ldi	r25, 0x16	; 22
+ 84a:	21 50       	subi	r18, 0x01	; 1
+ 84c:	80 40       	sbci	r24, 0x00	; 0
+ 84e:	90 40       	sbci	r25, 0x00	; 0
+ 850:	e1 f7       	brne	.-8      	; 0x84a <reset_hallsensor+0xa>
+ 852:	00 c0       	rjmp	.+0      	; 0x854 <reset_hallsensor+0x14>
+ 854:	00 00       	nop
+	_delay_ms(500);
+	PORTB |= (1<<RESET_FH5401);			//RESET Aus
+ 856:	c2 9a       	sbi	0x18, 2	; 24
+ 858:	8f ef       	ldi	r24, 0xFF	; 255
+ 85a:	9f e8       	ldi	r25, 0x8F	; 143
+ 85c:	01 97       	sbiw	r24, 0x01	; 1
+ 85e:	f1 f7       	brne	.-4      	; 0x85c <reset_hallsensor+0x1c>
+ 860:	00 c0       	rjmp	.+0      	; 0x862 <reset_hallsensor+0x22>
+ 862:	00 00       	nop
+	_delay_ms(10);
+	send_word(check_ready());
+ 864:	0e 94 07 04 	call	0x80e	; 0x80e <check_ready>
+ 868:	0e 94 ed 04 	call	0x9da	; 0x9da <send_word>
+	init_5401();
+ 86c:	0e 94 45 04 	call	0x88a	; 0x88a <init_5401>
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+ 870:	c4 9a       	sbi	0x18, 4	; 24
+ 872:	08 95       	ret
+
+00000874 <init_sram>:
+}
+
+void init_sram()
+{
+	//SPI EINRICHTEN FÜR SRAM
+	SPCR = SPI_CONFIG_SRAM;		//SPI ENABLE,Master auf 1 rest =0
+ 874:	80 e5       	ldi	r24, 0x50	; 80
+ 876:	8d b9       	out	0x0d, r24	; 13
+ 878:	08 95       	ret
+
+0000087a <IDN>:
+}
+
+void IDN()			//Sende Antwort zurück damit Labview die richtige COM Schnitstelle erkennt.
+{
+	uint8_t i='l';						//Sende Werte lmnop von l-p alphabet als erkennung	lmnop	
+	for (i='l';i<'q';i++)
+ 87a:	8c e6       	ldi	r24, 0x6C	; 108
+	{
+		UDR = i;
+ 87c:	8c b9       	out	0x0c, r24	; 12
+		while(!(UCSRA & (1<<UDRE)));	// Warten bis senden bereit
+ 87e:	5d 9b       	sbis	0x0b, 5	; 11
+ 880:	fe cf       	rjmp	.-4      	; 0x87e <IDN+0x4>
+}
+
+void IDN()			//Sende Antwort zurück damit Labview die richtige COM Schnitstelle erkennt.
+{
+	uint8_t i='l';						//Sende Werte lmnop von l-p alphabet als erkennung	lmnop	
+	for (i='l';i<'q';i++)
+ 882:	8f 5f       	subi	r24, 0xFF	; 255
+ 884:	81 37       	cpi	r24, 0x71	; 113
+ 886:	d1 f7       	brne	.-12     	; 0x87c <IDN+0x2>
+	{
+		UDR = i;
+		while(!(UCSRA & (1<<UDRE)));	// Warten bis senden bereit
+	}
+	
+}
+ 888:	08 95       	ret
+
+0000088a <init_5401>:
+
+void init_5401()
+{
+	PORTB &= ~(1<<CS_FH5401);			//CS Hallsensor einschalten	
+ 88a:	c4 98       	cbi	0x18, 4	; 24
+	send_read_spi(0x80);
+ 88c:	80 e8       	ldi	r24, 0x80	; 128
+ 88e:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x0B);
+ 892:	8b e0       	ldi	r24, 0x0B	; 11
+ 894:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x00);
+ 898:	80 e0       	ldi	r24, 0x00	; 0
+ 89a:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	send_read_spi(0x00);				//Single Magnetic Probe
+ 89e:	80 e0       	ldi	r24, 0x00	; 0
+ 8a0:	0e 94 33 05 	call	0xa66	; 0xa66 <send_read_spi>
+	
+	PORTB |= (1<<CS_FH5401);			//CS Hallsensor auschalten
+ 8a4:	c4 9a       	sbi	0x18, 4	; 24
+ 8a6:	08 95       	ret
+
+000008a8 <init>:
+#include "init.h"
+
+void init()
+{
+	//Serielle Schnittstelle einrichten
+	UBRRH = (uint8_t)( UART_UBRR_CALC( UART_BAUD_RATE, F_CPU ) >> 8 );
+ 8a8:	10 bc       	out	0x20, r1	; 32
+	UBRRL = (uint8_t)UART_UBRR_CALC( UART_BAUD_RATE, F_CPU );
+ 8aa:	83 e0       	ldi	r24, 0x03	; 3
+ 8ac:	89 b9       	out	0x09, r24	; 9
+	// Frameformat = 8 Bit
+	UCSRC=(1<<URSEL)|(1<<UCSZ1)|(1<<UCSZ0);
+ 8ae:	86 e8       	ldi	r24, 0x86	; 134
+ 8b0:	80 bd       	out	0x20, r24	; 32
+
+	//Datenrichtungsregister
+	DDRA = 0b10000000;							//PA7 = SHIFT_OUT für Status LED Shift register 
+ 8b2:	80 e8       	ldi	r24, 0x80	; 128
+ 8b4:	8a bb       	out	0x1a, r24	; 26
+	DDRB = 0b10111110;							//PB0=SSTRB,PB1=CSAD,PB2=Reset 3D,PB3=CE_IN(not used),PD4=CS_3D,REST = SPI
+ 8b6:	8e eb       	ldi	r24, 0xBE	; 190
+ 8b8:	87 bb       	out	0x17, r24	; 23
+	DDRC = 0b00001100;							//PC2=CLK 3D-Sensor PC3=CS SRAM,PC4= Ready 3D-Sens,
+ 8ba:	8c e0       	ldi	r24, 0x0C	; 12
+ 8bc:	84 bb       	out	0x14, r24	; 20
+	DDRD = 0b01000010;							//PD0=RXD, PD1=TXD, PD2=AORB PD3=Z,PD4=A, PD5=B,PD6=PL ,PD7=B2
+ 8be:	82 e4       	ldi	r24, 0x42	; 66
+ 8c0:	81 bb       	out	0x11, r24	; 17
+		
+	PORTB |= (1<<CS_FH5401);					//CS 3D Hallsensor abschalten
+ 8c2:	c4 9a       	sbi	0x18, 4	; 24
+	PORTC |= (1<<CS_SRAM);						//CS S-RAM abschalten
+ 8c4:	ab 9a       	sbi	0x15, 3	; 21
+	PORTB |= (1<<CS_AD);						//CS AD Wandler
+ 8c6:	c1 9a       	sbi	0x18, 1	; 24
+	PORTB |= (1<<PB3);							//CS Schieberegister Input (keine Funktion in V 2.0
+ 8c8:	c3 9a       	sbi	0x18, 3	; 24
+	PORTC |= (1<<PC5);							//Button Pull Up Widerstand
+ 8ca:	ad 9a       	sbi	0x15, 5	; 21
+	UCSRB = (1 << TXEN)|(1 << RXEN);			// Setzt TXEN und RXEN Bit= Transmitter Enable Reciver enable
+ 8cc:	88 e1       	ldi	r24, 0x18	; 24
+ 8ce:	8a b9       	out	0x0a, r24	; 10
+	SPSR = (1<<SPI2X);							// Douple speed aktivieren
+ 8d0:	81 e0       	ldi	r24, 0x01	; 1
+ 8d2:	8e b9       	out	0x0e, r24	; 14
+	SPCR = SPI_CONFIG_SRAM;						//SPI ENABLE,Master auf 1 rest =0
+ 8d4:	80 e5       	ldi	r24, 0x50	; 80
+ 8d6:	8d b9       	out	0x0d, r24	; 13
+
+	PORTB &= ~(1<<RESET_FH5401);				//Reset deaktivieren 3D Sensor
+ 8d8:	c2 98       	cbi	0x18, 2	; 24
+	PORTB &= ~(1<<PB3);							//ENABLE vom Resolver Print
+ 8da:	c3 98       	cbi	0x18, 3	; 24
+	
+	OCR2 = 250;									//Setze das Compare register
+ 8dc:	8a ef       	ldi	r24, 0xFA	; 250
+ 8de:	83 bd       	out	0x23, r24	; 35
+	//TIMSK |= (1<<OCIE2);						//Compare Interrupt Timer 2 erlauben
+	
+	//Interrupt Eingänge Encoder
+	MCUCR = (1<<ISC00)|(1<<ISC11)|(1<<ISC10);	// ISC00 auf 1 = jede änderung an INT 0 lösst einen Interrupt aus positivie Flanke INT 1 lösst Interrupts aus
+ 8e0:	8d e0       	ldi	r24, 0x0D	; 13
+ 8e2:	85 bf       	out	0x35, r24	; 53
+	GICR = (1<<INT1)|(1<<INT0);	       // aktivieren von INT0 = AB Impuls INT 1 = Z Impuls
+ 8e4:	80 ec       	ldi	r24, 0xC0	; 192
+ 8e6:	8b bf       	out	0x3b, r24	; 59
+	
+	set_mode(SEQUENTIAL_MODE);					//Sram MODE
+ 8e8:	80 e4       	ldi	r24, 0x40	; 64
+ 8ea:	0e 94 d8 05 	call	0xbb0	; 0xbb0 <set_mode>
+	reset_hallsensor();
+ 8ee:	0e 94 20 04 	call	0x840	; 0x840 <reset_hallsensor>
+	init_5401();								//3D Sensor initialisieren
+ 8f2:	0e 94 45 04 	call	0x88a	; 0x88a <init_5401>
+	TCCR1B=5;									//Timer 1 starten -> Prescaler 1024
+ 8f6:	85 e0       	ldi	r24, 0x05	; 5
+ 8f8:	8e bd       	out	0x2e, r24	; 46
+ 8fa:	08 95       	ret
+
+000008fc <Testmodus>:
+*/
+
+#include "Modus.h"
+
+void Testmodus()
+{	
+ 8fc:	0f 93       	push	r16
+ 8fe:	1f 93       	push	r17
+ 900:	cf 93       	push	r28
+ 902:	df 93       	push	r29
+	uint8_t temp=0;
+	uint8_t ledtest=1;
+	uint8_t laufrichtung=LINKS;
+	temp=check_uart();
+ 904:	0e 94 26 05 	call	0xa4c	; 0xa4c <check_uart>
+	while(temp==0)
+ 908:	81 11       	cpse	r24, r1
+ 90a:	20 c0       	rjmp	.+64     	; 0x94c <Testmodus+0x50>
+
+void Testmodus()
+{	
+	uint8_t temp=0;
+	uint8_t ledtest=1;
+	uint8_t laufrichtung=LINKS;
+ 90c:	d0 e0       	ldi	r29, 0x00	; 0
+#include "Modus.h"
+
+void Testmodus()
+{	
+	uint8_t temp=0;
+	uint8_t ledtest=1;
+ 90e:	c1 e0       	ldi	r28, 0x01	; 1
+		else
+		{
+			ledtest=ledtest>>1;	//Nach Rechts schieben
+			if (ledtest==ERSTES__LED)
+			{
+				laufrichtung=LINKS;
+ 910:	00 e0       	ldi	r16, 0x00	; 0
+		_delay_ms(DELAY_LAUFLICHT_MS);
+		
+		if (laufrichtung==LINKS)
+		{
+			ledtest=ledtest<<1;	//Nach links schieben
+			if (ledtest==LETZTES_LED)
+ 912:	11 e0       	ldi	r17, 0x01	; 1
+	uint8_t ledtest=1;
+	uint8_t laufrichtung=LINKS;
+	temp=check_uart();
+	while(temp==0)
+	{
+		write_status(ledtest);
+ 914:	8c 2f       	mov	r24, r28
+ 916:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+ 91a:	2f ef       	ldi	r18, 0xFF	; 255
+ 91c:	8f e7       	ldi	r24, 0x7F	; 127
+ 91e:	94 e0       	ldi	r25, 0x04	; 4
+ 920:	21 50       	subi	r18, 0x01	; 1
+ 922:	80 40       	sbci	r24, 0x00	; 0
+ 924:	90 40       	sbci	r25, 0x00	; 0
+ 926:	e1 f7       	brne	.-8      	; 0x920 <Testmodus+0x24>
+ 928:	00 c0       	rjmp	.+0      	; 0x92a <Testmodus+0x2e>
+ 92a:	00 00       	nop
+		_delay_ms(DELAY_LAUFLICHT_MS);
+		
+		if (laufrichtung==LINKS)
+ 92c:	d1 11       	cpse	r29, r1
+ 92e:	06 c0       	rjmp	.+12     	; 0x93c <Testmodus+0x40>
+		{
+			ledtest=ledtest<<1;	//Nach links schieben
+ 930:	cc 0f       	add	r28, r28
+			if (ledtest==LETZTES_LED)
+ 932:	d1 2f       	mov	r29, r17
+ 934:	c0 38       	cpi	r28, 0x80	; 128
+ 936:	31 f0       	breq	.+12     	; 0x944 <Testmodus+0x48>
+ 938:	d0 2f       	mov	r29, r16
+ 93a:	04 c0       	rjmp	.+8      	; 0x944 <Testmodus+0x48>
+				laufrichtung=RECHTS;
+			}
+		}
+		else
+		{
+			ledtest=ledtest>>1;	//Nach Rechts schieben
+ 93c:	c6 95       	lsr	r28
+			if (ledtest==ERSTES__LED)
+ 93e:	c1 30       	cpi	r28, 0x01	; 1
+ 940:	09 f4       	brne	.+2      	; 0x944 <Testmodus+0x48>
+			{
+				laufrichtung=LINKS;
+ 942:	d0 2f       	mov	r29, r16
+			}
+		}
+		
+		temp=check_uart();		//Befindet sich im LED Testmodus bis ein Zeichen empfangen wird.
+ 944:	0e 94 26 05 	call	0xa4c	; 0xa4c <check_uart>
+{	
+	uint8_t temp=0;
+	uint8_t ledtest=1;
+	uint8_t laufrichtung=LINKS;
+	temp=check_uart();
+	while(temp==0)
+ 948:	88 23       	and	r24, r24
+ 94a:	21 f3       	breq	.-56     	; 0x914 <Testmodus+0x18>
+			}
+		}
+		
+		temp=check_uart();		//Befindet sich im LED Testmodus bis ein Zeichen empfangen wird.
+	}
+	write_status(0);				//LED abschalten
+ 94c:	80 e0       	ldi	r24, 0x00	; 0
+ 94e:	0e 94 2c 05 	call	0xa58	; 0xa58 <write_status>
+}
+ 952:	df 91       	pop	r29
+ 954:	cf 91       	pop	r28
+ 956:	1f 91       	pop	r17
+ 958:	0f 91       	pop	r16
+ 95a:	08 95       	ret
+
+0000095c <speed_test>:
+
+void speed_test()
+{
+ 95c:	ef 92       	push	r14
+ 95e:	ff 92       	push	r15
+ 960:	0f 93       	push	r16
+ 962:	1f 93       	push	r17
+ 964:	cf 93       	push	r28
+ 966:	df 93       	push	r29
+ 968:	00 d0       	rcall	.+0      	; 0x96a <speed_test+0xe>
+ 96a:	00 d0       	rcall	.+0      	; 0x96c <speed_test+0x10>
+ 96c:	00 d0       	rcall	.+0      	; 0x96e <speed_test+0x12>
+ 96e:	cd b7       	in	r28, 0x3d	; 61
+ 970:	de b7       	in	r29, 0x3e	; 62
+	uint16_t i=0;
+	PORTD &= ~(1<<PD7);				//CS Schieberegister Resolver In einschalten
+ 972:	97 98       	cbi	0x12, 7	; 18
+	
+	PORTC |= (1<<PC7);						//PC0 auf 1 setzen TEST LAUFZEIT Oszilloskop Messung
+ 974:	af 9a       	sbi	0x15, 7	; 21
+ 976:	e1 2c       	mov	r14, r1
+ 978:	f1 2c       	mov	r15, r1
+	
+	for (i=0;i<700;i++)
+ 97a:	00 e0       	ldi	r16, 0x00	; 0
+ 97c:	10 e0       	ldi	r17, 0x00	; 0
+	{
+		int z,x,y;
+		singleshot(&x,&y,&z);
+ 97e:	ae 01       	movw	r20, r28
+ 980:	4b 5f       	subi	r20, 0xFB	; 251
+ 982:	5f 4f       	sbci	r21, 0xFF	; 255
+ 984:	be 01       	movw	r22, r28
+ 986:	6f 5f       	subi	r22, 0xFF	; 255
+ 988:	7f 4f       	sbci	r23, 0xFF	; 255
+ 98a:	ce 01       	movw	r24, r28
+ 98c:	03 96       	adiw	r24, 0x03	; 3
+ 98e:	0e 94 4c 03 	call	0x698	; 0x698 <singleshot>
+		save_data(i*6,i,i,i);
+ 992:	98 01       	movw	r18, r16
+ 994:	a8 01       	movw	r20, r16
+ 996:	b8 01       	movw	r22, r16
+ 998:	c7 01       	movw	r24, r14
+ 99a:	0e 94 38 05 	call	0xa70	; 0xa70 <save_data>
+	uint16_t i=0;
+	PORTD &= ~(1<<PD7);				//CS Schieberegister Resolver In einschalten
+	
+	PORTC |= (1<<PC7);						//PC0 auf 1 setzen TEST LAUFZEIT Oszilloskop Messung
+	
+	for (i=0;i<700;i++)
+ 99e:	0f 5f       	subi	r16, 0xFF	; 255
+ 9a0:	1f 4f       	sbci	r17, 0xFF	; 255
+ 9a2:	86 e0       	ldi	r24, 0x06	; 6
+ 9a4:	e8 0e       	add	r14, r24
+ 9a6:	f1 1c       	adc	r15, r1
+ 9a8:	0c 3b       	cpi	r16, 0xBC	; 188
+ 9aa:	82 e0       	ldi	r24, 0x02	; 2
+ 9ac:	18 07       	cpc	r17, r24
+ 9ae:	39 f7       	brne	.-50     	; 0x97e <speed_test+0x22>
+		int z,x,y;
+		singleshot(&x,&y,&z);
+		save_data(i*6,i,i,i);
+	}
+
+	PORTC &= ~ (1<<PC7);					//PC0 auf 0 setzen Test Laufzeit
+ 9b0:	af 98       	cbi	0x15, 7	; 21
+	PORTD |= (1<<PD7);						//CS Schieberegister Resolver In ausschalten
+ 9b2:	97 9a       	sbi	0x12, 7	; 18
+	
+	init_sram();
+ 9b4:	0e 94 3a 04 	call	0x874	; 0x874 <init_sram>
+	read_res_time(i*3);						//Werte auslesen *3 weil der Wert 3*16Bit gross ist
+ 9b8:	84 e3       	ldi	r24, 0x34	; 52
+ 9ba:	98 e0       	ldi	r25, 0x08	; 8
+ 9bc:	0e 94 69 05 	call	0xad2	; 0xad2 <read_res_time>
+ 9c0:	26 96       	adiw	r28, 0x06	; 6
+ 9c2:	0f b6       	in	r0, 0x3f	; 63
+ 9c4:	f8 94       	cli
+ 9c6:	de bf       	out	0x3e, r29	; 62
+ 9c8:	0f be       	out	0x3f, r0	; 63
+ 9ca:	cd bf       	out	0x3d, r28	; 61
+ 9cc:	df 91       	pop	r29
+ 9ce:	cf 91       	pop	r28
+ 9d0:	1f 91       	pop	r17
+ 9d2:	0f 91       	pop	r16
+ 9d4:	ff 90       	pop	r15
+ 9d6:	ef 90       	pop	r14
+ 9d8:	08 95       	ret
+
+000009da <send_word>:
+	uint8_t high=0;
+	
+	low=wert & 0xff;					//aufteilung in low und Highbyte
+	high=wert >> 8;	
+	
+	UDR = low;							//Senden von Lowbyte
+ 9da:	8c b9       	out	0x0c, r24	; 12
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ 9dc:	5d 9b       	sbis	0x0b, 5	; 11
+ 9de:	fe cf       	rjmp	.-4      	; 0x9dc <send_word+0x2>
+	
+	UDR = high;
+ 9e0:	9c b9       	out	0x0c, r25	; 12
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ 9e2:	5d 9b       	sbis	0x0b, 5	; 11
+ 9e4:	fe cf       	rjmp	.-4      	; 0x9e2 <send_word+0x8>
+		
+}
+ 9e6:	08 95       	ret
+
+000009e8 <uart_putc>:
+//	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+}
+
+void uart_putc(unsigned char c)
+{
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ 9e8:	5d 9b       	sbis	0x0b, 5	; 11
+ 9ea:	fe cf       	rjmp	.-4      	; 0x9e8 <uart_putc>
+	UDR = c;
+ 9ec:	8c b9       	out	0x0c, r24	; 12
+ 9ee:	08 95       	ret
+
+000009f0 <uart_puts>:
+}
+
+void uart_puts (char *s)
+{
+ 9f0:	cf 93       	push	r28
+ 9f2:	df 93       	push	r29
+ 9f4:	ec 01       	movw	r28, r24
+	while(*s)
+ 9f6:	88 81       	ld	r24, Y
+ 9f8:	88 23       	and	r24, r24
+ 9fa:	31 f0       	breq	.+12     	; 0xa08 <uart_puts+0x18>
+ 9fc:	21 96       	adiw	r28, 0x01	; 1
+	{
+		uart_putc(*s);
+ 9fe:	0e 94 f4 04 	call	0x9e8	; 0x9e8 <uart_putc>
+	UDR = c;
+}
+
+void uart_puts (char *s)
+{
+	while(*s)
+ a02:	89 91       	ld	r24, Y+
+ a04:	81 11       	cpse	r24, r1
+ a06:	fb cf       	rjmp	.-10     	; 0x9fe <uart_puts+0xe>
+	{
+		uart_putc(*s);
+		s++;
+	}
+}
+ a08:	df 91       	pop	r29
+ a0a:	cf 91       	pop	r28
+ a0c:	08 95       	ret
+
+00000a0e <send_sword>:
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+		
+}
+
+void send_sword(int wert)
+{
+ a0e:	cf 93       	push	r28
+ a10:	df 93       	push	r29
+ a12:	cd b7       	in	r28, 0x3d	; 61
+ a14:	de b7       	in	r29, 0x3e	; 62
+ a16:	2a 97       	sbiw	r28, 0x0a	; 10
+ a18:	0f b6       	in	r0, 0x3f	; 63
+ a1a:	f8 94       	cli
+ a1c:	de bf       	out	0x3e, r29	; 62
+ a1e:	0f be       	out	0x3f, r0	; 63
+ a20:	cd bf       	out	0x3d, r28	; 61
+    } else if (__radix < 2 || __radix > 36) {
+	*__s = 0;
+	return __s;
+    } else {
+	extern char *__itoa_ncheck (int, char *, unsigned char);
+	return __itoa_ncheck (__val, __s, __radix);
+ a22:	4a e0       	ldi	r20, 0x0A	; 10
+ a24:	be 01       	movw	r22, r28
+ a26:	6f 5f       	subi	r22, 0xFF	; 255
+ a28:	7f 4f       	sbci	r23, 0xFF	; 255
+ a2a:	0e 94 ea 05 	call	0xbd4	; 0xbd4 <__itoa_ncheck>
+	char Buffer[10];
+	
+	itoa(wert,Buffer,10);
+	uart_puts(Buffer);
+ a2e:	ce 01       	movw	r24, r28
+ a30:	01 96       	adiw	r24, 0x01	; 1
+ a32:	0e 94 f8 04 	call	0x9f0	; 0x9f0 <uart_puts>
+	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+ a36:	5d 9b       	sbis	0x0b, 5	; 11
+ a38:	fe cf       	rjmp	.-4      	; 0xa36 <send_sword+0x28>
+//	UDR = 10;							// Ende String Zeichen
+//	while(!(UCSRA & (1<<UDRE)));		// Warten bis senden bereit
+}
+ a3a:	2a 96       	adiw	r28, 0x0a	; 10
+ a3c:	0f b6       	in	r0, 0x3f	; 63
+ a3e:	f8 94       	cli
+ a40:	de bf       	out	0x3e, r29	; 62
+ a42:	0f be       	out	0x3f, r0	; 63
+ a44:	cd bf       	out	0x3d, r28	; 61
+ a46:	df 91       	pop	r29
+ a48:	cf 91       	pop	r28
+ a4a:	08 95       	ret
+
+00000a4c <check_uart>:
+	}
+}
+
+uint8_t check_uart()
+{
+	 if ( (UCSRA & (1<<RXC)) )
+ a4c:	5f 9b       	sbis	0x0b, 7	; 11
+ a4e:	02 c0       	rjmp	.+4      	; 0xa54 <check_uart+0x8>
+	 {
+		 return(UDR);		//Empfangenes Zeichen zurücksenden
+ a50:	8c b1       	in	r24, 0x0c	; 12
+ a52:	08 95       	ret
+	 }
+	else
+	{
+		return(0);			//Falls nichts im Buffer enthalten ist.
+ a54:	80 e0       	ldi	r24, 0x00	; 0
+	}
+ a56:	08 95       	ret
+
+00000a58 <write_status>:
+
+void write_status(uint8_t status)
+{
+	//init_595D();
+	
+	SPDR=status;							//Sende highbyte Resolver position zu schiebgeregister
+ a58:	8f b9       	out	0x0f, r24	; 15
+	while (!(SPSR & (1<<SPIF)));				// warten bis übertragung fertig
+ a5a:	77 9b       	sbis	0x0e, 7	; 14
+ a5c:	fe cf       	rjmp	.-4      	; 0xa5a <write_status+0x2>
+	
+	//0-1-0 Puls an STCP von Schieberegister um Werte zu übernehmen
+	PORTA &= ~ (1<<PA7);
+ a5e:	df 98       	cbi	0x1b, 7	; 27
+	PORTA |= (1<<PA7);
+ a60:	df 9a       	sbi	0x1b, 7	; 27
+	PORTA &= ~ (1<<PA7);
+ a62:	df 98       	cbi	0x1b, 7	; 27
+ a64:	08 95       	ret
+
+00000a66 <send_read_spi>:
+
+
+uint8_t send_read_spi(uint8_t data)
+{
+	uint8_t antwort;
+	SPDR = data;									//Daten senden
+ a66:	8f b9       	out	0x0f, r24	; 15
+	while (!(SPSR & (1<<SPIF)));					// warten bis übertragung fertig
+ a68:	77 9b       	sbis	0x0e, 7	; 14
+ a6a:	fe cf       	rjmp	.-4      	; 0xa68 <send_read_spi+0x2>
+	antwort = SPDR;
+ a6c:	8f b1       	in	r24, 0x0f	; 15
+	return(antwort);
+}
+ a6e:	08 95       	ret
+
+00000a70 <save_data>:
+#include "Sram.h"
+
+
+//****************************************** SAVE DATA IN S-RAM****************************************
+void save_data(uint16_t adresse,uint16_t x,uint16_t y,uint16_t z)		//Wird im Byte Operation mode ausgelesen
+{
+ a70:	1f 93       	push	r17
+ a72:	cf 93       	push	r28
+ a74:	df 93       	push	r29
+ a76:	cd b7       	in	r28, 0x3d	; 61
+ a78:	de b7       	in	r29, 0x3e	; 62
+ a7a:	2a 97       	sbiw	r28, 0x0a	; 10
+ a7c:	0f b6       	in	r0, 0x3f	; 63
+ a7e:	f8 94       	cli
+ a80:	de bf       	out	0x3e, r29	; 62
+ a82:	0f be       	out	0x3f, r0	; 63
+ a84:	cd bf       	out	0x3d, r28	; 61
+	uint8_t speicher[10] = {2,0,0,0,0,0,0,0,0,0};	//Variable für das S-RAM Write und speicher 0
+ a86:	fe 01       	movw	r30, r28
+ a88:	31 96       	adiw	r30, 0x01	; 1
+ a8a:	1a e0       	ldi	r17, 0x0A	; 10
+ a8c:	df 01       	movw	r26, r30
+ a8e:	1d 92       	st	X+, r1
+ a90:	1a 95       	dec	r17
+ a92:	e9 f7       	brne	.-6      	; 0xa8e <save_data+0x1e>
+ a94:	a2 e0       	ldi	r26, 0x02	; 2
+ a96:	a9 83       	std	Y+1, r26	; 0x01
+		
+	uint8_t temp=0;
+	PORTC &= ~(1<<CS_SRAM);					//CS S-RAM einschalten
+ a98:	ab 98       	cbi	0x15, 3	; 21
+	speicher[9]= z & 0xff;				//Low byte Z Hall
+ a9a:	2a 87       	std	Y+10, r18	; 0x0a
+	speicher[8]= z>>8;					//high byte z Hall
+ a9c:	39 87       	std	Y+9, r19	; 0x09
+	speicher[7]= y & 0xff;				//low byte y Hall
+ a9e:	48 87       	std	Y+8, r20	; 0x08
+	speicher[6]= y>>8;					//high byte Y Hall 
+ aa0:	5f 83       	std	Y+7, r21	; 0x07
+	speicher[5]= x & 0xff;				//low byte x Hall
+ aa2:	6e 83       	std	Y+6, r22	; 0x06
+	speicher[4]= x>>8;					//High byte x Hall
+ aa4:	7d 83       	std	Y+5, r23	; 0x05
+	speicher[3]= adresse & 0xFF;		//low byte der Adresse
+ aa6:	8c 83       	std	Y+4, r24	; 0x04
+	speicher[2]= adresse>>8;			//highbyte der Adresse
+ aa8:	9b 83       	std	Y+3, r25	; 0x03
+ aaa:	ce 01       	movw	r24, r28
+ aac:	0b 96       	adiw	r24, 0x0b	; 11
+	
+	for (temp=0;temp<10;temp++)
+	{		
+		SPDR=speicher[temp];			//Senden von SPI Adresse und Daten
+ aae:	21 91       	ld	r18, Z+
+ ab0:	2f b9       	out	0x0f, r18	; 15
+		while(!(SPSR & (1<<SPIF)));		//Warten bis übertragung fertig ist
+ ab2:	77 9b       	sbis	0x0e, 7	; 14
+ ab4:	fe cf       	rjmp	.-4      	; 0xab2 <save_data+0x42>
+	speicher[5]= x & 0xff;				//low byte x Hall
+	speicher[4]= x>>8;					//High byte x Hall
+	speicher[3]= adresse & 0xFF;		//low byte der Adresse
+	speicher[2]= adresse>>8;			//highbyte der Adresse
+	
+	for (temp=0;temp<10;temp++)
+ ab6:	e8 17       	cp	r30, r24
+ ab8:	f9 07       	cpc	r31, r25
+ aba:	c9 f7       	brne	.-14     	; 0xaae <save_data+0x3e>
+	{		
+		SPDR=speicher[temp];			//Senden von SPI Adresse und Daten
+		while(!(SPSR & (1<<SPIF)));		//Warten bis übertragung fertig ist
+	}
+	PORTC |= (1<<CS_SRAM);			//CS S-RAM auschalten
+ abc:	ab 9a       	sbi	0x15, 3	; 21
+}
+ abe:	2a 96       	adiw	r28, 0x0a	; 10
+ ac0:	0f b6       	in	r0, 0x3f	; 63
+ ac2:	f8 94       	cli
+ ac4:	de bf       	out	0x3e, r29	; 62
+ ac6:	0f be       	out	0x3f, r0	; 63
+ ac8:	cd bf       	out	0x3d, r28	; 61
+ aca:	df 91       	pop	r29
+ acc:	cf 91       	pop	r28
+ ace:	1f 91       	pop	r17
+ ad0:	08 95       	ret
+
+00000ad2 <read_res_time>:
+//****************************************** SAVE DATA IN S-RAM****************************************
+
+//********************************** READ RESOLVER DATA*************************************************
+void read_res_time(uint16_t anzahl)
+{
+ ad2:	8f 92       	push	r8
+ ad4:	9f 92       	push	r9
+ ad6:	bf 92       	push	r11
+ ad8:	cf 92       	push	r12
+ ada:	ef 92       	push	r14
+ adc:	ff 92       	push	r15
+ ade:	1f 93       	push	r17
+ ae0:	cf 93       	push	r28
+ ae2:	df 93       	push	r29
+ ae4:	00 d0       	rcall	.+0      	; 0xae6 <read_res_time+0x14>
+ ae6:	00 d0       	rcall	.+0      	; 0xae8 <read_res_time+0x16>
+ ae8:	cd b7       	in	r28, 0x3d	; 61
+ aea:	de b7       	in	r29, 0x3e	; 62
+ aec:	7c 01       	movw	r14, r24
+	uint8_t speicher[4] = {3,0,0,0};	//Variable für das S-RAM READ und speicher 0
+ aee:	83 e0       	ldi	r24, 0x03	; 3
+ af0:	89 83       	std	Y+1, r24	; 0x01
+ af2:	1a 82       	std	Y+2, r1	; 0x02
+ af4:	1b 82       	std	Y+3, r1	; 0x03
+ af6:	1c 82       	std	Y+4, r1	; 0x04
+ af8:	2f ef       	ldi	r18, 0xFF	; 255
+ afa:	8f e7       	ldi	r24, 0x7F	; 127
+ afc:	94 e0       	ldi	r25, 0x04	; 4
+ afe:	21 50       	subi	r18, 0x01	; 1
+ b00:	80 40       	sbci	r24, 0x00	; 0
+ b02:	90 40       	sbci	r25, 0x00	; 0
+ b04:	e1 f7       	brne	.-8      	; 0xafe <read_res_time+0x2c>
+ b06:	00 c0       	rjmp	.+0      	; 0xb08 <read_res_time+0x36>
+ b08:	00 00       	nop
+	
+	//send_word(anzahl);					//sende Wieviel Daten das gesendet wurden.
+	_delay_ms(WAIT_TIME);				//Computer Zeit geben
+	
+	PORTC &= ~(1<<CS_SRAM);				//CS S-RAM einschalten
+ b0a:	ab 98       	cbi	0x15, 3	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ b0c:	00 c0       	rjmp	.+0      	; 0xb0e <read_res_time+0x3c>
+ b0e:	00 c0       	rjmp	.+0      	; 0xb10 <read_res_time+0x3e>
+ b10:	fe 01       	movw	r30, r28
+ b12:	31 96       	adiw	r30, 0x01	; 1
+ b14:	ce 01       	movw	r24, r28
+ b16:	05 96       	adiw	r24, 0x05	; 5
+	_delay_us(0.25);
+	uint16_t temp=0;
+	
+	for (temp=0;temp<4;temp++)			//Senden von Speicher Instruction
+	{
+		SPDR=speicher[temp];
+ b18:	21 91       	ld	r18, Z+
+ b1a:	2f b9       	out	0x0f, r18	; 15
+		while(!(SPSR & (1<<SPIF)));		//Warten bis übertragung fertig ist
+ b1c:	77 9b       	sbis	0x0e, 7	; 14
+ b1e:	fe cf       	rjmp	.-4      	; 0xb1c <read_res_time+0x4a>
+	
+	PORTC &= ~(1<<CS_SRAM);				//CS S-RAM einschalten
+	_delay_us(0.25);
+	uint16_t temp=0;
+	
+	for (temp=0;temp<4;temp++)			//Senden von Speicher Instruction
+ b20:	e8 17       	cp	r30, r24
+ b22:	f9 07       	cpc	r31, r25
+ b24:	c9 f7       	brne	.-14     	; 0xb18 <read_res_time+0x46>
+	{
+		SPDR=speicher[temp];
+		while(!(SPSR & (1<<SPIF)));		//Warten bis übertragung fertig ist
+	}
+	
+	for (temp=0;temp<anzahl;temp++)			//per UART Daten senden Soviel wie in Parameter Anzahl angegeben wurden
+ b26:	e1 14       	cp	r14, r1
+ b28:	f1 04       	cpc	r15, r1
+ b2a:	99 f1       	breq	.+102    	; 0xb92 <read_res_time+0xc0>
+ b2c:	81 2c       	mov	r8, r1
+ b2e:	91 2c       	mov	r9, r1
+}
+//****************************************** SAVE DATA IN S-RAM****************************************
+
+//********************************** READ RESOLVER DATA*************************************************
+void read_res_time(uint16_t anzahl)
+{
+ b30:	b1 2c       	mov	r11, r1
+			case 0:uart_puts("X:");break;
+			case 1:uart_puts("Y:");break;
+			case 2:uart_puts("Z:");break;
+			}
+
+			SPDR=DUMMYDATA;					//irgendwas senden um übertragung zu starten
+ b32:	0f 2e       	mov	r0, r31
+ b34:	f5 ed       	ldi	r31, 0xD5	; 213
+ b36:	cf 2e       	mov	r12, r31
+ b38:	f0 2d       	mov	r31, r0
+ b3a:	29 c0       	rjmp	.+82     	; 0xb8e <read_res_time+0xbc>
+		uint8_t low;
+		int data;
+		uint8_t i;
+		for (i=0;i<3;i++)
+		{
+			switch (i)
+ b3c:	11 30       	cpi	r17, 0x01	; 1
+ b3e:	49 f0       	breq	.+18     	; 0xb52 <read_res_time+0x80>
+ b40:	18 f0       	brcs	.+6      	; 0xb48 <read_res_time+0x76>
+ b42:	12 30       	cpi	r17, 0x02	; 2
+ b44:	59 f0       	breq	.+22     	; 0xb5c <read_res_time+0x8a>
+ b46:	0e c0       	rjmp	.+28     	; 0xb64 <read_res_time+0x92>
+			{
+			case 0:uart_puts("X:");break;
+ b48:	8f e7       	ldi	r24, 0x7F	; 127
+ b4a:	90 e0       	ldi	r25, 0x00	; 0
+ b4c:	0e 94 f8 04 	call	0x9f0	; 0x9f0 <uart_puts>
+ b50:	09 c0       	rjmp	.+18     	; 0xb64 <read_res_time+0x92>
+			case 1:uart_puts("Y:");break;
+ b52:	82 e8       	ldi	r24, 0x82	; 130
+ b54:	90 e0       	ldi	r25, 0x00	; 0
+ b56:	0e 94 f8 04 	call	0x9f0	; 0x9f0 <uart_puts>
+ b5a:	04 c0       	rjmp	.+8      	; 0xb64 <read_res_time+0x92>
+			case 2:uart_puts("Z:");break;
+ b5c:	85 e8       	ldi	r24, 0x85	; 133
+ b5e:	90 e0       	ldi	r25, 0x00	; 0
+ b60:	0e 94 f8 04 	call	0x9f0	; 0x9f0 <uart_puts>
+			}
+
+			SPDR=DUMMYDATA;					//irgendwas senden um übertragung zu starten
+ b64:	cf b8       	out	0x0f, r12	; 15
+			while(!(SPSR & (1<<SPIF)));		//Warten bis übertragung fertig ist
+ b66:	77 9b       	sbis	0x0e, 7	; 14
+ b68:	fe cf       	rjmp	.-4      	; 0xb66 <read_res_time+0x94>
+			high=SPDR;						//High byte
+ b6a:	2f b1       	in	r18, 0x0f	; 15
+		
+			SPDR=DUMMYDATA;					//irgendwas senden um übertragung zu starten
+ b6c:	cf b8       	out	0x0f, r12	; 15
+			while(!(SPSR & (1<<SPIF)));		//Warten bis übertragung fertig ist
+ b6e:	77 9b       	sbis	0x0e, 7	; 14
+ b70:	fe cf       	rjmp	.-4      	; 0xb6e <read_res_time+0x9c>
+			low=SPDR;						//Senden des Wertes
+ b72:	8f b1       	in	r24, 0x0f	; 15
+			
+			data=(high<<8) | low;
+ b74:	90 e0       	ldi	r25, 0x00	; 0
+			send_sword(data);
+ b76:	92 2b       	or	r25, r18
+ b78:	0e 94 07 05 	call	0xa0e	; 0xa0e <send_sword>
+	{
+		uint8_t high;
+		uint8_t low;
+		int data;
+		uint8_t i;
+		for (i=0;i<3;i++)
+ b7c:	1f 5f       	subi	r17, 0xFF	; 255
+ b7e:	13 30       	cpi	r17, 0x03	; 3
+ b80:	e9 f6       	brne	.-70     	; 0xb3c <read_res_time+0x6a>
+	{
+		SPDR=speicher[temp];
+		while(!(SPSR & (1<<SPIF)));		//Warten bis übertragung fertig ist
+	}
+	
+	for (temp=0;temp<anzahl;temp++)			//per UART Daten senden Soviel wie in Parameter Anzahl angegeben wurden
+ b82:	2f ef       	ldi	r18, 0xFF	; 255
+ b84:	82 1a       	sub	r8, r18
+ b86:	92 0a       	sbc	r9, r18
+ b88:	8e 14       	cp	r8, r14
+ b8a:	9f 04       	cpc	r9, r15
+ b8c:	11 f0       	breq	.+4      	; 0xb92 <read_res_time+0xc0>
+}
+//****************************************** SAVE DATA IN S-RAM****************************************
+
+//********************************** READ RESOLVER DATA*************************************************
+void read_res_time(uint16_t anzahl)
+{
+ b8e:	1b 2d       	mov	r17, r11
+ b90:	d5 cf       	rjmp	.-86     	; 0xb3c <read_res_time+0x6a>
+		{
+			_delay_ms(WAIT_TIME);		//Nach den ersten zeichen 100ms warten damit Labview genügend Zeit hat.
+		}
+		*/	
+	}
+	PORTC |= (1<<CS_SRAM);					//CS S-RAM auschalten
+ b92:	ab 9a       	sbi	0x15, 3	; 21
+	
+}
+ b94:	0f 90       	pop	r0
+ b96:	0f 90       	pop	r0
+ b98:	0f 90       	pop	r0
+ b9a:	0f 90       	pop	r0
+ b9c:	df 91       	pop	r29
+ b9e:	cf 91       	pop	r28
+ ba0:	1f 91       	pop	r17
+ ba2:	ff 90       	pop	r15
+ ba4:	ef 90       	pop	r14
+ ba6:	cf 90       	pop	r12
+ ba8:	bf 90       	pop	r11
+ baa:	9f 90       	pop	r9
+ bac:	8f 90       	pop	r8
+ bae:	08 95       	ret
+
+00000bb0 <set_mode>:
+//********************************** READ RESOLVER DATA*************************************************
+
+//********************************** SET MODE IN S-RAM*************************************************
+void set_mode(uint8_t modus)
+{
+	PORTC &= ~(1<<CS_SRAM);			//CS S-RAM einschalten
+ bb0:	ab 98       	cbi	0x15, 3	; 21
+ bb2:	00 c0       	rjmp	.+0      	; 0xbb4 <set_mode+0x4>
+ bb4:	00 c0       	rjmp	.+0      	; 0xbb6 <set_mode+0x6>
+	_delay_us(0.25);
+	
+	SPDR=1;						//Set Modus
+ bb6:	91 e0       	ldi	r25, 0x01	; 1
+ bb8:	9f b9       	out	0x0f, r25	; 15
+	while(!(SPSR & (1<<SPIF)));	//Warten bis übertragung fertig ist
+ bba:	77 9b       	sbis	0x0e, 7	; 14
+ bbc:	fe cf       	rjmp	.-4      	; 0xbba <set_mode+0xa>
+	SPDR=modus;					//Modus setzen
+ bbe:	8f b9       	out	0x0f, r24	; 15
+	while(!(SPSR & (1<<SPIF)));	//Warten bis übertragung fertig ist
+ bc0:	77 9b       	sbis	0x0e, 7	; 14
+ bc2:	fe cf       	rjmp	.-4      	; 0xbc0 <set_mode+0x10>
+	
+	PORTC |= (1<<CS_SRAM);			//CS S-RAM auschalten
+ bc4:	ab 9a       	sbi	0x15, 3	; 21
+ bc6:	08 95       	ret
+
+00000bc8 <__tablejump2__>:
+ bc8:	ee 0f       	add	r30, r30
+ bca:	ff 1f       	adc	r31, r31
+
+00000bcc <__tablejump__>:
+ bcc:	05 90       	lpm	r0, Z+
+ bce:	f4 91       	lpm	r31, Z
+ bd0:	e0 2d       	mov	r30, r0
+ bd2:	09 94       	ijmp
+
+00000bd4 <__itoa_ncheck>:
+ bd4:	bb 27       	eor	r27, r27
+ bd6:	4a 30       	cpi	r20, 0x0A	; 10
+ bd8:	31 f4       	brne	.+12     	; 0xbe6 <__itoa_ncheck+0x12>
+ bda:	99 23       	and	r25, r25
+ bdc:	22 f4       	brpl	.+8      	; 0xbe6 <__itoa_ncheck+0x12>
+ bde:	bd e2       	ldi	r27, 0x2D	; 45
+ be0:	90 95       	com	r25
+ be2:	81 95       	neg	r24
+ be4:	9f 4f       	sbci	r25, 0xFF	; 255
+ be6:	0c 94 f6 05 	jmp	0xbec	; 0xbec <__utoa_common>
+
+00000bea <__utoa_ncheck>:
+ bea:	bb 27       	eor	r27, r27
+
+00000bec <__utoa_common>:
+ bec:	fb 01       	movw	r30, r22
+ bee:	55 27       	eor	r21, r21
+ bf0:	aa 27       	eor	r26, r26
+ bf2:	88 0f       	add	r24, r24
+ bf4:	99 1f       	adc	r25, r25
+ bf6:	aa 1f       	adc	r26, r26
+ bf8:	a4 17       	cp	r26, r20
+ bfa:	10 f0       	brcs	.+4      	; 0xc00 <__utoa_common+0x14>
+ bfc:	a4 1b       	sub	r26, r20
+ bfe:	83 95       	inc	r24
+ c00:	50 51       	subi	r21, 0x10	; 16
+ c02:	b9 f7       	brne	.-18     	; 0xbf2 <__utoa_common+0x6>
+ c04:	a0 5d       	subi	r26, 0xD0	; 208
+ c06:	aa 33       	cpi	r26, 0x3A	; 58
+ c08:	08 f0       	brcs	.+2      	; 0xc0c <__utoa_common+0x20>
+ c0a:	a9 5d       	subi	r26, 0xD9	; 217
+ c0c:	a1 93       	st	Z+, r26
+ c0e:	00 97       	sbiw	r24, 0x00	; 0
+ c10:	79 f7       	brne	.-34     	; 0xbf0 <__utoa_common+0x4>
+ c12:	b1 11       	cpse	r27, r1
+ c14:	b1 93       	st	Z+, r27
+ c16:	11 92       	st	Z+, r1
+ c18:	cb 01       	movw	r24, r22
+ c1a:	0c 94 0f 06 	jmp	0xc1e	; 0xc1e <strrev>
+
+00000c1e <strrev>:
+ c1e:	dc 01       	movw	r26, r24
+ c20:	fc 01       	movw	r30, r24
+ c22:	67 2f       	mov	r22, r23
+ c24:	71 91       	ld	r23, Z+
+ c26:	77 23       	and	r23, r23
+ c28:	e1 f7       	brne	.-8      	; 0xc22 <strrev+0x4>
+ c2a:	32 97       	sbiw	r30, 0x02	; 2
+ c2c:	04 c0       	rjmp	.+8      	; 0xc36 <strrev+0x18>
+ c2e:	7c 91       	ld	r23, X
+ c30:	6d 93       	st	X+, r22
+ c32:	70 83       	st	Z, r23
+ c34:	62 91       	ld	r22, -Z
+ c36:	ae 17       	cp	r26, r30
+ c38:	bf 07       	cpc	r27, r31
+ c3a:	c8 f3       	brcs	.-14     	; 0xc2e <strrev+0x10>
+ c3c:	08 95       	ret
+
+00000c3e <_exit>:
+ c3e:	f8 94       	cli
+
+00000c40 <__stop_program>:
+ c40:	ff cf       	rjmp	.-2      	; 0xc40 <__stop_program>

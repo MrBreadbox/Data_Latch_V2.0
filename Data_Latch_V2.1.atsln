@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Data_Latch_V2.1", "Data_Latch_V2.1.cproj", "{CB81B28D-CCF0-4AAE-8F86-B2CAE09D9604}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB81B28D-CCF0-4AAE-8F86-B2CAE09D9604}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CB81B28D-CCF0-4AAE-8F86-B2CAE09D9604}.Debug|AVR.Build.0 = Debug|AVR
+		{CB81B28D-CCF0-4AAE-8F86-B2CAE09D9604}.Release|AVR.ActiveCfg = Release|AVR
+		{CB81B28D-CCF0-4AAE-8F86-B2CAE09D9604}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
